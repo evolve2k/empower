@@ -9,6 +9,11 @@ describe Volunteer do
   end
 
   it "should require email" do
-    Volunteer.make(:email => nil).should_not be_valid
+    Volunteer.new(Volunteer.make_unsaved(:email => "").attributes).should_not be_valid
   end
+  
+  it "should generate password on create" do
+    volunteer = Volunteer.make(:password => "", :password_confirmation => "")
+    volunteer.password.should_not be_blank
+  end  
 end

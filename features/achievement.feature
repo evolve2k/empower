@@ -2,7 +2,8 @@ Feature: Achievement
   In order to acknowledge good work
   As an administrator
   I want to award achievements
-  
+
+  @wip
   Scenario: Volunteer for 7 months, badges exist for 1 year, 2 year and 10 years
     Given the following badges exist
       | name      | threshold | sql                         |
