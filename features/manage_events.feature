@@ -28,10 +28,14 @@ Feature: Manage event administration
     And I should see "Create one now"
 
   Scenario: Admin Events Index page
+    Given an event: "test" exists
     Given I am on the admin events page
-    And there are events available
     Then I should not see "Sorry there are no events,"
     And I should not see "Create one now"
+    And I should see "Weather"
+    And I should see "What"
+    And I should see "Where"
+    And I should see "When"
 
 
 
