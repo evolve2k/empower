@@ -1,0 +1,321 @@
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:39:44) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:40:29) [GET]
+Rendering volunteers/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:40:50) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:43:20) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://test.host/volunteers]
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:46:46) [GET]
+Rendering volunteers/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:47:25) [GET]
+Rendering volunteers/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:47:47) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:51:06) [GET]
+Rendering volunteers/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:51:43) [GET]
+Rendering volunteers/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (5.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVolunteers (20100310040929)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "volunteers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100310040929')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("volunteers")[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 14:53:44) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.5ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-03-10 04:23:44', '2010-03-10 04:23:44')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 15:09:44) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.5ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-03-10 04:39:44', '2010-03-10 04:39:44')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-03-10 15:10:08) [GET]
+Rendering volunteers/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mVolunteer Create (0.6ms)[0m   [0;1mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-03-10 04:40:08', '2010-03-10 04:40:08')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:08:50) [GET]
+Rendering volunteers/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.5ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 22:38:50', '2010-04-16 22:38:50')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:14:33) [GET]
+Rendering volunteers/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (3.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.7ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 22:44:33', '2010-04-16 22:44:33')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:24:50) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (2.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.6ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 22:54:50', '2010-04-16 22:54:50')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:25:03) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (2.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.6ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 22:55:03', '2010-04-16 22:55:03')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:34:29) [GET]
+Rendering volunteers/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (3.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.3ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:04:29', '2010-04-16 23:04:29')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:38:17) [GET]
+Rendering volunteers/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (1.0ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:08:17', '2010-04-16 23:08:17')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:38:22) [GET]
+Rendering volunteers/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mVolunteer Create (0.6ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:08:22', '2010-04-16 23:08:22')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:39:40) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mVolunteer Create (0.7ms)[0m   [0;1mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:09:40', '2010-04-16 23:09:40')[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 08:40:53) [GET]
+Rendering volunteers/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mVolunteer Create (0.6ms)[0m   [0;1mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:10:53', '2010-04-16 23:10:53')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:06:21) [GET]
+Rendering volunteers/new
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:06:21) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (0.8ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:36:21', '2010-04-16 23:36:21')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:06:54) [GET]
+Rendering volunteers/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:06:54) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (1.1ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:36:54', '2010-04-16 23:36:54')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:09:14) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+  [4;36;1mSQL (1.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:09:14) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (1.0ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:39:14', '2010-04-16 23:39:14')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:09:28) [GET]
+Rendering volunteers/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:09:28) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (1.0ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:39:28', '2010-04-16 23:39:28')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:09:51) [GET]
+Rendering volunteers/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:09:51) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (0.6ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:39:51', '2010-04-16 23:39:51')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:27:23) [GET]
+Rendering volunteers/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:27:23) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (0.6ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-16 23:57:23', '2010-04-16 23:57:23')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:38:26) [GET]
+Rendering volunteers/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:38:26) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 2) | 200 OK [http://test.host/volunteers]
+  [4;35;1mVolunteer Create (0.8ms)[0m   [0mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-17 00:08:26', '2010-04-17 00:08:26')[0m
+
+
+Processing VolunteersController#new (for 0.0.0.0 at 2010-04-17 09:41:22) [GET]
+Rendering volunteers/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/volunteers/new]
+
+
+Processing VolunteersController#index (for 0.0.0.0 at 2010-04-17 09:41:22) [GET]
+Rendering volunteers/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/volunteers]
+  [4;36;1mVolunteer Create (0.7ms)[0m   [0;1mINSERT INTO "volunteers" ("created_at", "updated_at") VALUES('2010-04-17 00:11:22', '2010-04-17 00:11:22')[0m

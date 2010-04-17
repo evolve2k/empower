@@ -1,0 +1,271 @@
+# Logfile created on Wed Mar 10 13:15:11 +1030 2010REQUESTING PAGE: GET /volunteer with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 13:39:22) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 13:40:02) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-03-10 13:55:53) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 13:55:54) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-03-10 14:04:17) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 14:04:17) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-03-10 14:07:24) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 14:07:24) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-03-10 14:27:47) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 14:27:47) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-03-10 14:38:32) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 14:38:32) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-03-10 14:47:14) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-10 14:47:14) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-07 14:04:35) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-07 14:04:35) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 08:08:00) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 08:08:00) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 08:41:37) [GET]
+  [4;36;1mVolunteer Load (1.6ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 08:41:38) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 08:43:51) [GET]
+  [4;36;1mVolunteer Load (1.6ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 08:43:51) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 08:47:40) [GET]
+  [4;36;1mVolunteer Load (13.9ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 19ms (View: 2, DB: 14) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 08:52:58) [GET]
+  [4;36;1mVolunteer Load (1.9ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 20ms (View: 2, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 08:54:47) [GET]
+  [4;36;1mVolunteer Load (1.5ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 08:54:47) [GET]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-04-17 08:54:47) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:11:40) [GET]
+  [4;36;1mVolunteer Load (1.6ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 19ms (View: 14, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:11:40) [GET]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-04-17 09:11:40) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:41:41) [GET]
+  [4;36;1mVolunteer Load (1.6ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 28ms (View: 21, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:41:42) [GET]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-04-17 09:41:42) [GET]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:42:25) [GET]
+  [4;36;1mVolunteer Load (1.7ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 23ms (View: 9, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:42:25) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:43:53) [GET]
+  [4;36;1mVolunteer Load (1.6ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 59ms (View: 38, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:43:53) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:45:52) [GET]
+  [4;36;1mVolunteer Load (1.6ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 59ms (View: 45, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:45:53) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:46:21) [GET]
+  [4;36;1mVolunteer Load (1.7ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 35ms (View: 17, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:46:21) [GET]
+Rendering volunteers/new
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:47:04) [GET]
+  [4;36;1mVolunteer Load (13.9ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 28ms (View: 9, DB: 14) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:47:04) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:47:31) [GET]
+  [4;36;1mVolunteer Load (1.5ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 41ms (View: 27, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:47:31) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 09:48:24) [GET]
+  [4;36;1mVolunteer Load (2.0ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 39ms (View: 17, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:48:24) [GET]
+Rendering volunteers/new
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 09:48:24) [GET]
+Rendering volunteers/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 12:35:41) [GET]
+  [4;36;1mVolunteer Load (1.5ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 79ms (View: 55, DB: 2) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 12:35:41) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 12:35:41) [GET]
+Rendering volunteers/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers with {} and HTTP headers {}
+
+
+Processing VolunteersController#index (for 127.0.0.1 at 2010-04-17 13:36:15) [GET]
+  [4;36;1mVolunteer Load (2.9ms)[0m   [0;1mSELECT * FROM "volunteers" [0m
+Rendering volunteers/index
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://www.example.com/volunteers]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {"HTTP_REFERER"=>"/volunteers"}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 13:36:15) [GET]
+Rendering volunteers/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
+REQUESTING PAGE: GET /volunteers/new with {} and HTTP headers {}
+
+
+Processing VolunteersController#new (for 127.0.0.1 at 2010-04-17 13:36:15) [GET]
+Rendering volunteers/new
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://www.example.com/volunteers/new]
