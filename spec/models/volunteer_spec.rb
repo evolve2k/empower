@@ -14,10 +14,11 @@ describe Volunteer do
   
   it "should generate password on create" do
     volunteer = Volunteer.make(:password => "", :password_confirmation => "")
-    puts("--", "volunteer.password.inspect", volunteer.password.class, volunteer.password.inspect, "")
     volunteer.password.should_not be_blank
   end
   
-  it "should send a welcome email when created"
+  it "should send a welcome email when created" do
+    
+  end
   
 end

@@ -14,7 +14,7 @@ class Volunteer < ActiveRecord::Base
 private
 
   def generate_password
-    # self.password ||= 
+    self.password ||= randomize_password
   end
 
   def full_name
