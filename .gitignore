@@ -12,3 +12,4 @@ public/stylesheets/application.css
 tmp/web*
 tmp/restart.txt
 *.sw?
+config/database.yml

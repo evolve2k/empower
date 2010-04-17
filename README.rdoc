@@ -1,0 +1,13 @@
+= empower
+
+An internal app to support Carpets for Communities. It allows volunteers to report sales from markets, for both business intelligence and recognition.
+
+== Quick start
+
+  cp config/database.example.yml config/database.yml # Edit to taste
+  rake db:create:all
+  rake db:migrate
+  env RAILS_ENV=test rake gems:install
+
+  rake            # Run specs
+  ./script/server # Run server on localhost:3000
