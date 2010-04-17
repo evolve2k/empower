@@ -13,16 +13,16 @@
     #header
       .container
         %h1 empowering communities
-        %ul
-          %li= link_to "volunteers", admin_volunteers_path, :class => "active"
-          %li= link_to "badges", admin_badges_path
-          %li= link_to "locations"
-          %li= link_to "channels"
-          %li= link_to "states"
-          %li= link_to "products"
-          %li= link_to 'Logout', volunteer_logout_path
-    .notice= flash[:notice]
-        
+        - if logged_in?
+          %ul
+            %li= link_to "volunteers", admin_volunteers_path, :class => "active"
+            %li= link_to "badges", admin_badges_path
+            %li= link_to "locations"
+            %li= link_to "region"
+            / %li= link_to "products"
+            %li= link_to 'Logout', volunteer_logout_path
+            
     #main
       .container
+        .notice= flash[:notice]        
         = yield

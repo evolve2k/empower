@@ -1,0 +1,61 @@
+- semantic_form_for @volunteer do |volunteer_form|
+  = volunteer_form.inputs
+  
+/ 
+/     <td><%= f.label :given_names %></td>
+/     <td><%= f.text_field :given_names %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :surname %></td>
+/     <td><%= f.text_field :surname %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :preffered_name %></td>
+/     <td><%= f.text_field :preffered_name %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :email %></td>
+/     <td><%= f.text_field :email %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :skype_name %></td>
+/     <td><%= f.text_field :skype_name %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :mobile %></td>
+/     <td><%= f.text_field :mobile %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :home_phone %></td>
+/     <td><%= f.text_field :home_phone %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :work_phone %></td>
+/     <td><%= f.text_field :work_phone %></td>
+/   </tr>
+/   / auto
+/   <tr>
+/     <td><%= f.label :processed_by %></td>
+/     <td><%= f.text_field :processed_by %></td>
+/   </tr>
+/   / state
+/   <tr>
+/     <td><%= f.label :region %></td>
+/     <td><%= f.text_field :region %></td>
+/   </tr>
+/   
+/   <tr>
+/     <td><%= f.label :paid_until %></td>
+/     <td><%= f.check_box :paid %></td>
+/   </tr>
+/   <tr>
+/     <td><%= f.label :personal_skills %></td>
+/     <td><%= f.text_field :personal_skills %></td>
+/   </tr>
+/   <tr>
+/     <td></td><td><%= f.submit 'Submit' %></td>
+/   </tr>
+/ </table>
+/ 
+/ <% end %>
+/ 
