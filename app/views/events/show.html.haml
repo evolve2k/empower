@@ -1,0 +1,40 @@
+- content_for(:css) do
+  = stylesheet_link_tag("reset")
+  = stylesheet_link_tag("forms")
+  = stylesheet_link_tag("application")
+
+%h1
+  Bondi Market
+  %span.actions
+    (
+    = link_to("Edit", '#')
+    )
+%dl
+  %dt Date
+  %dd 17 May 2010
+  %dt Volunteers
+  %dd Xavier Shay, Richard Khoo
+
+%h2 What sold?
+%form.tableForm
+  %table
+    %tr
+      %th Rug #
+      %th Sale price
+      %th Seller
+    %tr
+      %td
+        %input{:placeholder => 1251}
+      %td
+        %input{:placeholder => 100}
+      %td
+        %select
+          %option
+          %option Xavier Shay
+          %option Richard Koo
+    %tr
+      %th Total
+      %td $0
+    %tr
+      %td
+        %input{:type => 'submit', :value => 'Save'}

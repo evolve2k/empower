@@ -1,0 +1,35 @@
+.formtastic
+  fieldset
+    ol
+      li
+        border-bottom: none
+        
+    &.inputs
+      border-top: none
+      
+    &.buttons
+      margin-top: 0
+      
+      .commit
+        padding: 0
+      
+    label
+      padding: 0
+      
+      span
+        font-size: 70%
+        margin-left: 10px
+        
+  // Over write the skintastic error colors to use the error_color
+  // variable that is defined in colors.sass
+  p.inline-errors
+    color = !error_color
+  p.inline-hints
+    font-size: 13px
+  .error
+    input,textarea,select
+      border:
+        width: 1px
+        style: solid 
+        color = !error_color
+  
