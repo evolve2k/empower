@@ -1,13 +1,11 @@
 require 'spec_helper'
 
 describe Volunteer do
-  before(:each) do
-    @valid_attributes = {
-      
-    }
+  it "should be valid" do
+    Volunteer.make.should be_valid
   end
 
-  it "should create a new instance given valid attributes" do
-    Volunteer.create!(@valid_attributes)
+  it "should require email" do
+    Volunteer.make(:email => nil).should_not be_valid
   end
 end
