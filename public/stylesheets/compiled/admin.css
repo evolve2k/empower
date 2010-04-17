@@ -819,7 +819,19 @@ form.formtastic .label {
   width: 500px;
   margin: 0 auto; }
 
-/* line 52, ../../../app/stylesheets/admin.sass */
-.volunteer {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd; }
+/* line 53, ../../../app/stylesheets/admin.sass */
+table#volunteers td {
+  border-bottom: 1px solid #EFEFEF; }
+/* line 56, ../../../app/stylesheets/admin.sass */
+table#volunteers tr:hover {
+  background: #EFEFEF; }
+/* line 58, ../../../app/stylesheets/admin.sass */
+table#volunteers a {
+  color: #000;
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none; }
+
+/* line 66, ../../../app/stylesheets/admin.sass */
+table thead th {
+  background: #FFF; }
