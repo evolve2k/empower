@@ -9,6 +9,7 @@ Rails::Initializer.run do |config|
   config.gem 'compass', :version => '>= 0.8.17'
   config.gem "haml"
   config.gem "formtastic"
+  config.gem "factory_girl", :source => "http://gemcutter.org"
 
   config.time_zone = 'UTC'
 end

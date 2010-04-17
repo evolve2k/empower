@@ -1,14 +1,16 @@
-Given /^the following events:$/ do |events|
-  Event.create!(events.hashes)
+Given /^I am logged in as "([^\"]*)"$/ do |email|
+  Volunteer.make(:email => email)
+  visit '/volunteer-login'
+  fill_in 'email', :with => email
+  fill_in 'password', :with => 'm00c0w'
+  click_button 'Login'
 end
 
-When /^I delete the (\d+)(?:st|nd|rd|th) event$/ do |pos|
-  visit events_url
-  within("table tr:nth-child(#{pos.to_i+1})") do
-    click_link "Destroy"
-  end
+Given /^there are no events available$/ do
+  @events = nil
 end
 
-Then /^I should see the following events:$/ do |expected_events_table|
-  expected_events_table.diff!(tableish('table tr', 'td,th'))
+Given /^there are events available$/ do
+  @events = Event.find :all
 end
+
