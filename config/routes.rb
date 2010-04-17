@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.volunteer_logout '/volunteer-logout', :controller => 'volunteer_sessions', :action => 'destroy'
   map.admin '/admin', :controller => 'admin'
     admin.resources :volunteers
+    admin.resources :badges
   end
   map.root :controller => 'root'
 end
