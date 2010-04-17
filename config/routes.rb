@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :events
     admin.resources :volunteers
     admin.resources :badges
+    admin.resources :participants
   end
   map.root :controller => 'root'
 end

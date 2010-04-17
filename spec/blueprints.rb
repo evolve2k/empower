@@ -13,6 +13,11 @@ Badge.blueprint do
   threshold 1
 end
 
+Participant.blueprint do
+  name
+  dob  { rand(100).years.ago }
+end
+
 Volunteer.blueprint do
   email
   password 'm00c0w'
