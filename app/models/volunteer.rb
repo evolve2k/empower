@@ -6,11 +6,16 @@ class Volunteer < ActiveRecord::Base
 
   validates_presence_of :email
   
+  before_validation_on_create :generate_password
   after_save :update_achievements
   
   delegate :to_s, :to => :full_name
   
 private
+
+  def generate_password
+    # self.password ||= 
+  end
 
   def full_name
     [given_names, surname].join(" ")
