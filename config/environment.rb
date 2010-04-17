@@ -13,7 +13,6 @@ Rails::Initializer.run do |config|
 #config.gem "haml"
 #config.gem "formtastic"
 
-
   config.time_zone = 'UTC'
 end
 

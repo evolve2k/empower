@@ -1,2 +1,17 @@
-- semantic_form_for [:admin, @volunteer] do |volunteer_form|
-  = volunteer_form.inputs
+.centered
+  - semantic_form_for [:admin, @volunteer] do |volunteer_form|
+    = volunteer_form.error_messages
+    - volunteer_form.inputs do
+      = volunteer_form.input :given_names
+      = volunteer_form.input :surname
+      = volunteer_form.input :preffered_name
+      = volunteer_form.input :email
+      = volunteer_form.input :skype_name
+      = volunteer_form.input :mobile
+      = volunteer_form.input :home_phone
+      = volunteer_form.input :work_phone
+      = volunteer_form.input :processed_by
+      = volunteer_form.input :region
+      = volunteer_form.input :paid_until
+      = volunteer_form.input :personal_skills
+    = volunteer_form.buttons
