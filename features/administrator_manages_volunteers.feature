@@ -5,6 +5,7 @@ Feature: An administrator should be able to manage volunteers
 
 Scenario: Getting to the new volunteer page from Volunteers
   Given I am on the volunteers page
+  And there is a user "J
   When I follow "New volunteer"
   Then I should be on new volunteer page
 
