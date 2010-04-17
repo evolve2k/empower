@@ -13,3 +13,4 @@ tmp/web*
 tmp/restart.txt
 *.sw?
 config/database.yml
+db/schema.rb
