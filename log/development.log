@@ -74,3 +74,27 @@ Migrating to CreateVolunteers (20100310040929)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("volunteers")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 06:00:32) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 06:00:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-17 06:07:47) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
