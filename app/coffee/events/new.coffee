@@ -1,11 +1,10 @@
 $(document).ready ->
   $('.who-input').live 'keyup', () ->
-    lastInput: $(this).parent().find('input').last()
+    lastInput: $('.who-input').last()
 
     if (lastInput.val().length > 0)
-      $(this).parent().append("<br /><input type='text' class='who-input' placeholder='Leave blank if no more'/>");
+      lastInput.parent().after("<li><input type='text' class='no-label who-input' placeholder='Leave blank if no more'/></li>");
     else
-      secondLast: lastInput.prevAll('input').first()
+      secondLast: lastInput.parent('li').prevAll('li').first().find('.who-input')
       if (secondLast.size() == 1 && secondLast.val().length == 0)
-        lastInput.prev('br').remove()
-        lastInput.remove()
+        lastInput.parent('li').remove()

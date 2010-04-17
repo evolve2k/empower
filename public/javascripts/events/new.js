@@ -2,15 +2,12 @@
   $(document).ready(function() {
     return $('.who-input').live('keyup', function() {
       var lastInput, secondLast;
-      lastInput = $(this).parent().find('input').last();
+      lastInput = $('.who-input').last();
       if ((lastInput.val().length > 0)) {
-        return $(this).parent().append("<br /><input type='text' class='who-input' placeholder='Leave blank if no more'/>");
+        return lastInput.parent().after("<li><input type='text' class='no-label who-input' placeholder='Leave blank if no more'/></li>");
       } else {
-        secondLast = lastInput.prevAll('input').first();
-        if ((secondLast.size() === 1 && secondLast.val().length === 0)) {
-          lastInput.prev('br').remove();
-          return lastInput.remove();
-        }
+        secondLast = lastInput.parent('li').prevAll('li').first().find('.who-input');
+        return (secondLast.size() === 1 && secondLast.val().length === 0) ? lastInput.parent('li').remove() : null;
       }
     });
   });
