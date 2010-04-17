@@ -1,0 +1,11 @@
+%table
+  %tr
+    %th What
+    %th Where
+    %th When
+
+  - @events.each do |event|
+    %tr
+      %th= img(event.weather)
+      %td= event.location_id
+      %td=
