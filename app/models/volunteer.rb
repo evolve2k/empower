@@ -8,10 +8,15 @@ class Volunteer < ActiveRecord::Base
   
   before_validation_on_create :generate_password
   after_save :update_achievements
+  after_create :send_welcome_email
   
   delegate :to_s, :to => :full_name
   
 private
+
+  def send_welcome_email
+    Mailer.deliver_welcome(self)
+  end
 
   def generate_password
     self.password ||= randomize_password

@@ -3,6 +3,6 @@ Given /^there are no events available$/ do
 end
 
 Given /^there are events available$/ do
-  @events = Event.find :all
+  @events = Event.all
 end
 

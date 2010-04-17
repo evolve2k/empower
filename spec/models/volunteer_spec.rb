@@ -16,9 +16,4 @@ describe Volunteer do
     volunteer = Volunteer.make(:password => "", :password_confirmation => "")
     volunteer.password.should_not be_blank
   end
-  
-  it "should send a welcome email when created" do
-    
-  end
-  
 end

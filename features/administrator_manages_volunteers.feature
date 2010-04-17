@@ -20,4 +20,5 @@ Feature: An administrator should be able to manage volunteers
     And I press "Create Volunteer"
     Then I should be on the admin volunteers page
     And I should see "Tyson Avery"
+    And 1 email should be delivered to "tyson@avery.com"
     

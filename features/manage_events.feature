@@ -27,6 +27,7 @@ Feature: Manage event administration
     Then I should see "Sorry there are no events,"
     And I should see "Create one now"
 
+  @wip
   Scenario: Admin Events Index page
     Given I am on the admin events page
     And there are events available
