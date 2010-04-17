@@ -1,4 +1,4 @@
-Feature: Manage events
+Feature: Manage event administration
   In order to have events working well
   The administrator
   wants perfection
@@ -15,15 +15,23 @@ Feature: Manage events
     Then I should be on the admin home page
     And I should see "Successfully logged in"
 
-  Scenario: Admin Events Volunteer  page
+  Scenario: Admin Events Volunteer page (Menu navigation)
     Given I am on the new admin volunteer page
     Then I should see "events"
     And I follow "events"
     Then I should be on the admin events page
 
+  Scenario: Admin Events Index page (No content)
+    Given I am on the admin events page
+    And there are no events available
+    Then I should see "Sorry there are no events,"
+    And I should see "Create one now"
+
   Scenario: Admin Events Index page
     Given I am on the admin events page
-    Then I should be on the admin events page
+    And there are events available
+    Then I should not see "Sorry there are no events,"
+    And I should not see "Create one now"
 
 
 
