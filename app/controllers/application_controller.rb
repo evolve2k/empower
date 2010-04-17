@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
     private
   def require_volunteer
     unless current_volunteer
-      flash[:notice] = "You must be logged in to access this page"
       redirect_to volunteer_login_path
       return false
     end

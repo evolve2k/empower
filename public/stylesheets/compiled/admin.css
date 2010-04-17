@@ -755,11 +755,16 @@ form.formtastic .label {
   height: 63px;
   background: #0E7F07; }
   /* line 16, ../../../app/stylesheets/admin.sass */
+  #header #logo {
+    float: right;
+    border-top: 0; }
+  /* line 20, ../../../app/stylesheets/admin.sass */
   #header h1 {
+    font-size: 32px;
     color: #052F03;
-    margin-top: 31px;
+    margin-top: 32px;
     float: right; }
-  /* line 21, ../../../app/stylesheets/admin.sass */
+  /* line 26, ../../../app/stylesheets/admin.sass */
   #header ul {
     display: none;
     margin: 0;
@@ -787,24 +792,34 @@ form.formtastic .label {
       /* line 42, ../../../vendor/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
       #header ul li.last {
         padding-right: 0px; }
-    /* line 25, ../../../app/stylesheets/admin.sass */
+    /* line 30, ../../../app/stylesheets/admin.sass */
     #header ul a {
       color: #000;
       display: block;
       padding: 10px 20px;
       background: #DDD;
       text-decoration: none; }
-      /* line 31, ../../../app/stylesheets/admin.sass */
+      /* line 36, ../../../app/stylesheets/admin.sass */
       #header ul a:hover {
         background: #FFF; }
-      /* line 33, ../../../app/stylesheets/admin.sass */
+      /* line 38, ../../../app/stylesheets/admin.sass */
       #header ul a.active {
         background: #FFF; }
 
-/* line 36, ../../../app/stylesheets/admin.sass */
+/* line 41, ../../../app/stylesheets/admin.sass */
 #main {
   padding: 20px 0; }
-  /* line 38, ../../../app/stylesheets/admin.sass */
+  /* line 44, ../../../app/stylesheets/admin.sass */
   #main .container {
-    min-height: 200px;
-    background: url('/images/empowering.jpg') no-repeat bottom right; }
+    position: relative;
+    z-index: 100; }
+
+/* line 48, ../../../app/stylesheets/admin.sass */
+.centered {
+  width: 500px;
+  margin: 0 auto; }
+
+/* line 52, ../../../app/stylesheets/admin.sass */
+.volunteer {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; }
