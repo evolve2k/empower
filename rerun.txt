@@ -1,1 +1,1 @@
-features/achievement.feature:6 features/administrator_manages_volunteers.feature:6:12 features/manage_events.feature:18 features/volunteer_login.feature:6:18:27:33
+features/achievement.feature:6 features/administrator_manages_volunteers.feature:6:12 features/volunteer_login.feature:27:33

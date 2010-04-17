@@ -8,3 +8,5 @@ Feature: Badge
     Given I am logged in
     When I go to the admin badges page
     Then I should be forbidden
+
+
