@@ -8,7 +8,13 @@ class Volunteer < ActiveRecord::Base
   
   after_save :update_achievements
   
+  delegate :to_s, :to => :full_name
+  
 private
+
+  def full_name
+    [given_names, surname].join(" ")
+  end
   
   def update_achievements
     unachieved_badges.each { |badge| achievements.create(:badge => badge) }

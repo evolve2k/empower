@@ -12,7 +12,8 @@
   %body
     #header
       .container
-        %h1 empowering communities
+        %div#logo= image_tag("/images/empowering.jpg")
+        / %h1 empowering communities
         - if logged_in?
           %ul
             %li= link_to "volunteers", admin_volunteers_path, :class => "active"
@@ -24,5 +25,5 @@
             
     #main
       .container
-        .notice= flash[:notice]        
+        .notice= flash[:notice]
         = yield

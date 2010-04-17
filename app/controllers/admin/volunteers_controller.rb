@@ -1,5 +1,4 @@
 class Admin::VolunteersController < AdminController
-  
   layout "admin"
 
   def index
