@@ -1,0 +1,35 @@
+- content_for(:css) do
+  = stylesheet_link_tag("reset")
+  = stylesheet_link_tag("application")
+  = stylesheet_link_tag("forms")
+
+%h2 Event Wrapup
+%form{:action => '/events/1'}
+  %ul
+    %li
+      %label Where?
+      %input
+    %li
+      %label Who?
+      %input
+    %li
+      %label Weather?
+      %select
+        %option Beautiful
+        %option So hot!
+        %option Meh
+        %option Bit nippy
+        %option Needed an extra jumper
+        %option Monsoon
+    %li
+      %label Crowd?
+      %select
+        %option Packed
+        %option Meh
+        %option Scarse
+    %li
+      %label How'd it go?
+      %textarea
+    %li
+      %input{:type => 'submit', :value => 'Next', :class => 'no-label'}
+

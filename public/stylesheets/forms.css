@@ -1,0 +1,30 @@
+/* TODO: Sass this */
+form {
+  margin-top: 0.5em;
+}
+form li {
+  margin-bottom: 0.25em;
+}
+form label {
+  display: inline-block;
+  width: 100px;
+}
+form input.no-label {
+  margin-left: 100px;
+}
+form .errorExplanation ul {
+  list-style: disc;
+  margin: 1em 0;
+}
+form .errorExplanation ul li {
+  margin-left: 1.5em;
+}
+form textarea {
+  width: 40em;
+  height: 15em;
+}
+
+.tableForm th {
+  text-align: left;
+  font-weight: bold;
+}
