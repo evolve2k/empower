@@ -22,5 +22,5 @@ group :cucumber do
   gem "webrat"
   gem "database_cleaner"
   gem "cucumber-rails"
-  gem "test-unit"
+  gem "test-unit", "1.2.3"
 end
