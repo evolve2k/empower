@@ -2,14 +2,19 @@
   Sorry there are no events,
   = link_to "Create one now", new_admin_event_path
 - else
-  Foo
-%table
-  %tr
-    %th What
-    %th Where
-    %th When
-
-  - @events.each do |event|
+  %table
     %tr
-      %td= img(event.weather)
-      %td= event.location_id
+      %th What
+      %th Where
+      %th When
+      %th Weather
+
+
+    - @events.each do |event|
+      %tr
+        %td= link_to event.name, admin_event_path(event)
+        %td= event.location_id
+        %td= event.event_date
+        %td= event.weather
+
+
