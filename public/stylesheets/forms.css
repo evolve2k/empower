@@ -1,4 +1,8 @@
 /* TODO: Sass this */
+input {
+  padding: 0px;
+  width: 150px;
+}
 form {
   margin-top: 0.5em;
 }
@@ -8,6 +12,7 @@ form li {
 form label {
   display: inline-block;
   width: 100px;
+  float: left;
 }
 form input.no-label {
   margin-left: 100px;
@@ -27,4 +32,8 @@ form textarea {
 .tableForm th {
   text-align: left;
   font-weight: bold;
+}
+
+.fields {
+  margin-left: 100px;
 }
