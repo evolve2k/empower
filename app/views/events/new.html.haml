@@ -12,33 +12,28 @@
   %ul
     %li
       %label{:style => 'float: left'} Where?
-      .fields
-        %input
+      %input
     %li
       %label Who?
-      .fields{:style => 'width: 150px;'}
-        %input{:class => 'who-input'}
+      %input{:class => 'who-input'}
     %li
       %label Weather?
-      .fields
-        %select
-          %option Beautiful
-          %option So hot!
-          %option Meh
-          %option Bit nippy
-          %option Needed an extra jumper
-          %option Monsoon
+      %select
+        %option Beautiful
+        %option So hot!
+        %option Meh
+        %option Bit nippy
+        %option Needed an extra jumper
+        %option Monsoon
     %li
       %label Crowd?
-      .fields
-        %select
-          %option Packed
-          %option Meh
-          %option Scarse
+      %select
+        %option Packed
+        %option Meh
+        %option Scarse
     %li
       %label How'd it go?
-      .fields
-        %textarea
+      %textarea
     %li
       %input{:type => 'submit', :value => 'Next', :class => 'no-label'}
 

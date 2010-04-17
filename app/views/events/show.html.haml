@@ -13,9 +13,18 @@
   %dt Date
   %dd 17 May 2010
   %dt Volunteers
-  %dd Xavier Shay, Richard Khoo
+  %dd
+    %div{:style => 'float:left;text-align: center;margin-right: 0.5em'}
+      = image_tag("mockup/xavier.jpg", :size => '75x75')
+      %br
+      %caption Xavier Shay
+    %div{:style => 'float:left;text-align: center'}
+      = image_tag("mockup/xavier-2.jpg", :size => '75x75')
+      %br
+      %caption Richard Khoo
+    %br{:style => 'clear:both'}
 
-%h2 What sold?
+%h2{:style => 'clear:both'} What sold?
 %form.tableForm
   %table
     %tr
