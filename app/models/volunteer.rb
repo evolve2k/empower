@@ -12,6 +12,12 @@ class Volunteer < ActiveRecord::Base
   
   delegate :to_s, :to => :full_name
   
+  named_scope :sorted, :order => "lower(given_names) ASC"
+  
+  def <=> (vol)
+    given_names.downcase <=> vol.given_names.downcase
+  end
+  
 private
 
   def send_welcome_email
@@ -33,4 +39,5 @@ private
   def unachieved_badges
     Badge.all - badges
   end
+  
 end

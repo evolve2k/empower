@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe VolunteersController, "POST create" do
+describe Admin::VolunteersController, "POST create" do
 
   describe "#index" do
     it "finds all volunteers" do

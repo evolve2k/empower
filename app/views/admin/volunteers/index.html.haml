@@ -1,4 +1,18 @@
 = link_to "New volunteer", new_admin_volunteer_path
 
-- for volunteer in @volunteers
-  %div[volunteer]= link_to volunteer, [:edit, :admin, volunteer]
+%table#volunteers.list
+  %thead
+    %tr
+      %th
+      %th skype
+      %th mobile
+      %th home
+      %th work
+  %tbody
+    - for volunteer in @volunteers
+      %tr[volunteer]
+        %td= link_to volunteer, [:edit, :admin, volunteer]
+        %td= link_to volunteer.skype_name, [:edit, :admin, volunteer]
+        %td= link_to volunteer.mobile, [:edit, :admin, volunteer]
+        %td= link_to volunteer.home_phone, [:edit, :admin, volunteer]
+        %td= link_to volunteer.work_phone, [:edit, :admin, volunteer]
