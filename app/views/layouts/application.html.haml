@@ -4,5 +4,7 @@
     %title Event Wrapup - Empower
     = yield :css
   %body
+    .menu
+    .notice= flash[:notice]
     = yield
     = yield :js

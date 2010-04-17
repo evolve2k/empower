@@ -8,5 +8,7 @@ Sham.email { Faker::Internet.email }
 Sham.message { Faker::Lorem.sentence }
 
 Volunteer.blueprint do
-  
+  email
+  password 'm00c0w'
+  password_confirmation 'm00c0w'
 end

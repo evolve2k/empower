@@ -10,6 +10,14 @@ module NavigationHelpers
     
     when /the home\s?page/
       '/'
+    when /the volunteer login page/
+      '/volunteer-login'
+    when /the admin home page/
+      '/admin'
+
+    when /the volunteer session page/
+      '/volunteer_sessions'  
+
       
     when /^the (.+?) page$/                                         # translate to named route
       send "#{$1.downcase.gsub(' ','_')}_path"

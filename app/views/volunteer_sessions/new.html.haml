@@ -1,0 +1,8 @@
+- semantic_form_for(@volunteer_session) do |f|
+  = error_messages_for :volunteer_session
+  - f.inputs do
+    = f.input :email
+    = f.input :password
+
+  - f.buttons do
+    = f.submit 'Login'
