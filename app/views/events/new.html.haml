@@ -3,6 +3,10 @@
   = stylesheet_link_tag("application")
   = stylesheet_link_tag("forms")
 
+- content_for(:js) do
+  = javascript_include_tag('jquery-1.4.2')
+  = javascript_include_tag('events/new')
+
 %h2 Event Wrapup
 %form{:action => '/events/1'}
   %ul
@@ -11,7 +15,7 @@
       %input
     %li
       %label Who?
-      %input
+      %input{:class => 'who-input'}
     %li
       %label Weather?
       %select
