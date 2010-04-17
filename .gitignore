@@ -1,0 +1,14 @@
+.DS_Store
+log/*
+tmp/**/*
+nbproject
+db/*.sqlite3
+*.tmpproj
+vendor/plugins/haml
+coverage*
+config/database.yml
+config/settings.yml
+public/stylesheets/application.css
+tmp/web*
+tmp/restart.txt
+*.sw?

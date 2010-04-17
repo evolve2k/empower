@@ -1,2 +1,0 @@
-<%= link_to 'New volunteer', new_volunteer_path %>
-
