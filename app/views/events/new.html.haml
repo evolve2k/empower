@@ -11,29 +11,34 @@
 %form{:action => '/events/1'}
   %ul
     %li
-      %label Where?
-      %input
+      %label{:style => 'float: left'} Where?
+      .fields
+        %input
     %li
       %label Who?
-      %input{:class => 'who-input'}
+      .fields{:style => 'width: 150px;'}
+        %input{:class => 'who-input'}
     %li
       %label Weather?
-      %select
-        %option Beautiful
-        %option So hot!
-        %option Meh
-        %option Bit nippy
-        %option Needed an extra jumper
-        %option Monsoon
+      .fields
+        %select
+          %option Beautiful
+          %option So hot!
+          %option Meh
+          %option Bit nippy
+          %option Needed an extra jumper
+          %option Monsoon
     %li
       %label Crowd?
-      %select
-        %option Packed
-        %option Meh
-        %option Scarse
+      .fields
+        %select
+          %option Packed
+          %option Meh
+          %option Scarse
     %li
       %label How'd it go?
-      %textarea
+      .fields
+        %textarea
     %li
       %input{:type => 'submit', :value => 'Next', :class => 'no-label'}
 
