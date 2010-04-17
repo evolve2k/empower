@@ -5,6 +5,29 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
+  filter_parameter_logging :password
+
+    private
+  def require_volunteer
+    unless current_volunteer
+      flash[:notice] = "You must be logged in to access this page"
+      redirect_to volunteer_login_path
+      return false
+    end
+  end
+
+  def current_volunteer_session
+    return @current_volunteer_session if defined?(@current_volunteer_session)
+    @current_volunteer_session = VolunteerSession.find
+  end
+
+  helper_method :logged_in?
+  def logged_in?
+    current_volunteer
+  end
+
+  def current_volunteer
+    return @current_volunteer if defined?(@current_volunteer)
+    @current_volunteer = current_volunteer_session && current_volunteer_session.record
+  end
 end
