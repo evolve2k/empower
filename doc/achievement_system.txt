@@ -1,0 +1,49 @@
+Administrator sets rules (SQL)
+- Badge name
+- via SQL
+- Criteria (text, logic)
+  - been member for 1 year
+  - number of market stalls
+  - number of rainy markets
+  - completed all user profile fields
+  # - conference attendance
+  # - joined friends
+  # - funds raised
+  # - visiting project
+  # - taking officer role
+  # - being on the board
+
+- accumulates badges
+
+- callback trigger assessing if qualifies?
+
+
+
+Badge
+- name
+- description
+- sql
+
+Achievement
+- volunteer
+- badge
+
+
+
+Event
+- after_save :update_achievements
+  for each volunteer
+  - add missing achievements if they qualify
+  - scope to badge "type" (based on model: event, membership, volunteer, officer)
+  
+
+class Event
+  include Achievements
+  
+  def related_users
+    [self] # volunteers
+  end
+end
+
+module Achievements
+  after_save :update_achievements

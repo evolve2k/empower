@@ -9,7 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100310040929) do
+ActiveRecord::Schema.define(:version => 20100417091419) do
+
+  create_table "achievements", :force => true do |t|
+    t.integer  "badge_id"
+    t.integer  "volunteer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "achievements", ["badge_id", "volunteer_id"], :name => "index_achievements_on_badge_id_and_volunteer_id", :unique => true
+  add_index "achievements", ["volunteer_id"], :name => "index_achievements_on_volunteer_id"
+
+  create_table "badges", :force => true do |t|
+    t.string   "name"
+    t.integer  "threshold"
+    t.text     "sql"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "badges", ["name"], :name => "index_badges_on_name", :unique => true
 
   create_table "volunteers", :force => true do |t|
     t.string   "email"
