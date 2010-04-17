@@ -4,9 +4,9 @@ Feature: An administrator should be able to manage volunteers
   I want to be able to manage volunteers in the system
 
 Scenario: Getting to the new volunteer page from Volunteers
-  Given I am on the volunteers page
+  Given I am on the admin volunteers page
   When I follow "New volunteer"
-  Then I should be on new volunteer page
+  Then I should be on the new admin volunteer page
 
 Scenario: Adding a volunteer to the system
   Given I am on the new volunteer page
