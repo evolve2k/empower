@@ -756,10 +756,11 @@ form.formtastic .label {
   background: #0E7F07; }
   /* line 16, ../../../app/stylesheets/admin.sass */
   #header h1 {
+    font-size: 32px;
     color: #052F03;
-    margin-top: 31px;
+    margin-top: 32px;
     float: right; }
-  /* line 21, ../../../app/stylesheets/admin.sass */
+  /* line 22, ../../../app/stylesheets/admin.sass */
   #header ul {
     display: none;
     margin: 0;
@@ -787,24 +788,29 @@ form.formtastic .label {
       /* line 42, ../../../vendor/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
       #header ul li.last {
         padding-right: 0px; }
-    /* line 25, ../../../app/stylesheets/admin.sass */
+    /* line 26, ../../../app/stylesheets/admin.sass */
     #header ul a {
       color: #000;
       display: block;
       padding: 10px 20px;
       background: #DDD;
       text-decoration: none; }
-      /* line 31, ../../../app/stylesheets/admin.sass */
+      /* line 32, ../../../app/stylesheets/admin.sass */
       #header ul a:hover {
         background: #FFF; }
-      /* line 33, ../../../app/stylesheets/admin.sass */
+      /* line 34, ../../../app/stylesheets/admin.sass */
       #header ul a.active {
         background: #FFF; }
 
-/* line 36, ../../../app/stylesheets/admin.sass */
+/* line 37, ../../../app/stylesheets/admin.sass */
 #main {
   padding: 20px 0; }
-  /* line 38, ../../../app/stylesheets/admin.sass */
+  /* line 39, ../../../app/stylesheets/admin.sass */
   #main .container {
     min-height: 200px;
     background: url('/images/empowering.jpg') no-repeat bottom right; }
+
+/* line 43, ../../../app/stylesheets/admin.sass */
+.centered {
+  width: 500px;
+  margin: 0 auto; }

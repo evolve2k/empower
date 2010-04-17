@@ -1,4 +1,6 @@
 class VolunteerSessionsController < ApplicationController
+  layout "admin"
+  
   def new
     @volunteer_session = VolunteerSession.new
   end
