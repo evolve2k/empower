@@ -12,6 +12,28 @@
 ActiveRecord::Schema.define(:version => 20100310040929) do
 
   create_table "volunteers", :force => true do |t|
+    t.string   "email"
+    t.string   "crypted_password",    :null => false
+    t.string   "password_salt",       :null => false
+    t.string   "persistence_token",   :null => false
+    t.string   "single_access_token", :null => false
+    t.string   "perishable_token",    :null => false
+    t.text     "given_names"
+    t.text     "surname"
+    t.text     "preffered_name"
+    t.date     "birth_date"
+    t.text     "skype_name"
+    t.text     "mobile"
+    t.text     "home_phone"
+    t.text     "work_phone"
+    t.text     "business_name"
+    t.text     "processed_by"
+    t.text     "entered_by"
+    t.text     "region"
+    t.boolean  "paid"
+    t.text     "payment_method"
+    t.text     "payment_notes"
+    t.text     "personal_skills"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
