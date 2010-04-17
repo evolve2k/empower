@@ -1,0 +1,37 @@
+@import partials/base.sass
+
+.container
+  +container
+  
+%p
+  font-size: 1.3em
+  
+form.formtastic
+  +stack-form(95%, "full", 0, "buttons-left", "select-auto")
+
+#header
+  height: 63px
+  background: #0E7F07
+  
+  h1
+    color: #052F03
+    margin-top: 31px
+    float: right
+  
+  ul
+    display: none
+    +horizontal-list
+    margin-top: 25px
+    a
+      color: #000
+      display: block
+      padding: 10px 20px
+      background: #DDD
+      text-decoration: none
+      &:hover
+        background: #FFF
+      &.active
+        background: #FFF
+        
+#main
+  padding: 20px 0

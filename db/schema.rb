@@ -12,6 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100310040929) do
 
   create_table "volunteers", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

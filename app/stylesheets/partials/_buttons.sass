@@ -1,0 +1,27 @@
+@import blueprint/modules/buttons.sass
+
+// Default Button Colors
+!blueprint_button_background_color = #EFEFEF
+!blueprint_button_font_color = #2F2F2F
+
+// Default Button Hover Colors
+!blueprint_button_hover_background_color = #E0E4EF
+!blueprint_button_hover_font_color = #2F2F2F
+
+// Default Button Active Colors
+!blueprint_button_active_border_color = #CFCFCF
+!blueprint_button_active_background_color = #EFEFEF
+!blueprint_button_active_font_color = #2F2F2F
+
+button, li.commit input
+  +button-button
+  +button-colors
+  +button-hover-colors
+  +button-active-colors
+
+a.button
+  +anchor-button
+  +button-colors
+  +button-hover-colors
+  +button-active-colors
+  
