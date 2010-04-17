@@ -3,20 +3,27 @@ Feature: Manage events
   The administrator
   wants perfection
 
-
-  Scenario: Getting to the new volunteer page from Volunteers
-    Given I am on the events page
-    When I follow "New event"
-    Then I should be on new event page
-    And I should see "New event"
-
-  Scenario: Adding a event to the system
-    Given I am on the new event page
+  Background:
+    Given I am on the volunteer login page
+    And there is a volunteer with the following:
+    | email | password | password_confirmation |
+    | lilian@gmail.com   | m00c0w   | m00c0w  |
     When I fill in the following:
-       | Given Name | Tyson |
-       | Surname    | Avery |
-    And I press "Submit"
-    Then I should be on "events"
-    And I should see "Tyson Avery" within "name"
+    | email | lilian@gmail.com |
+    | password   | m00c0w   |
+    And I press "Login"
+    Then I should be on the admin home page
+    And I should see "Successfully logged in"
+
+  Scenario: Admin Events Volunteer  page
+    Given I am on the new admin volunteer page
+    Then I should see "events"
+    And I follow "events"
+    Then I should be on the admin events page
+
+  Scenario: Admin Events Index page
+    Given I am on the admin events page
+    Then I should be on the admin events page
+
 
 
