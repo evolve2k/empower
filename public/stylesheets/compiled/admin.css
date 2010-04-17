@@ -821,17 +821,18 @@ form.formtastic .label {
 
 /* line 53, ../../../app/stylesheets/admin.sass */
 table#volunteers td {
+  padding: 0;
   border-bottom: 1px solid #EFEFEF; }
-/* line 56, ../../../app/stylesheets/admin.sass */
+/* line 57, ../../../app/stylesheets/admin.sass */
 table#volunteers tr:hover {
   background: #EFEFEF; }
-/* line 58, ../../../app/stylesheets/admin.sass */
+/* line 59, ../../../app/stylesheets/admin.sass */
 table#volunteers a {
   color: #000;
   display: block;
   padding: 10px 5px;
   text-decoration: none; }
 
-/* line 66, ../../../app/stylesheets/admin.sass */
+/* line 67, ../../../app/stylesheets/admin.sass */
 table thead th {
   background: #FFF; }
