@@ -804,3 +804,7 @@ form.formtastic .label {
 /* line 36, ../../../app/stylesheets/admin.sass */
 #main {
   padding: 20px 0; }
+  /* line 38, ../../../app/stylesheets/admin.sass */
+  #main .container {
+    min-height: 200px;
+    background: url('/images/empowering.jpg') no-repeat bottom right; }
