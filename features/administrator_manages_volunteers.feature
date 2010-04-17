@@ -5,12 +5,14 @@ Feature: An administrator should be able to manage volunteers
 
   Background:
     Given I am logged in as "lilian@gmail.com"
-  
+
+  @wip
   Scenario: Getting to the new volunteer page from Volunteers
     Given I am on the admin volunteers page
     When I follow "New volunteer"
     Then I should be on the new admin volunteer page
 
+  @wip
   Scenario: Adding a volunteer to the system
     Given I am on the new admin volunteer page
     When I fill in the following:

@@ -15,6 +15,7 @@ Feature: Manage event administration
     Then I should be on the admin home page
     And I should see "Successfully logged in"
 
+  @wip
   Scenario: Admin Events Volunteer page (Menu navigation)
     Given I am on the new admin volunteer page
     Then I should see "events"
