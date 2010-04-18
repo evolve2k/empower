@@ -15,5 +15,5 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :locations
     admin.resources :regions
   end
-  map.root :controller => 'root'
+  map.root :controller => 'admin'
 end
