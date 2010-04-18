@@ -8,7 +8,7 @@ Feature: Navigation
     Given I am logged in as "lilian@gmail.com"
     When I follow "<tab>"
     Then I should see "<tab>" within "#header a.active"
-    And I should be on the admin <tab> page
+    And I should be on the <path>
     Given there are no badges
     When I follow "badges"
     Then I should be on the new admin badge page
@@ -17,11 +17,9 @@ Feature: Navigation
     When I follow "badges"
     Then I should be on the admin badges page
     And I should see "badges" within "#header a.active"
-    When I follow "region"
-    Then I should see "region" within "#header a.active"
-    And I should be on the admin regions page
     Examples:
-      | tab |
-      | volunteers |
-      | events |
-      | locations |
+      | tab | path |
+      | volunteers | admin volunteers page |
+      | events | admin events page |
+      | locations | admin locations page |
+      | region | admin regions page |
