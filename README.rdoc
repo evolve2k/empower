@@ -9,8 +9,11 @@ An internal app to support Carpets for Communities. It allows volunteers to repo
   rake db:create:all
   rake db:migrate
 
+  rake db:seed    # Fake data for development
   rake            # Run specs
   ./script/server # Run server on localhost:3000
+
+Use scott@scott.com/scott to login is you ran db:seed
 
 == Dev notes
 
