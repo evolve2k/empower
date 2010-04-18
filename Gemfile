@@ -6,7 +6,7 @@ gem "authlogic"
 gem "compass"
 gem "haml"
 gem "formtastic"
-gem "sqlite3-ruby"
+gem "mysql"
 
 group :test do
   gem "rspec"
