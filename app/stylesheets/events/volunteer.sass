@@ -1,64 +1,97 @@
 .header-thumbnail
   float: left
   //-webkit-border-radius: 10px
+.intro
+  font-size: 1.2em
+  color: #aaa
+  margin-left: 1em
 h1
-  padding-left: 110px
+  padding-left: 135px
   padding-top: 30px
   height: 70px
+  font-family: Raleway
 ul.nav
+  margin-left: 2em
   margin-top: 1em
   font-size: 1.5em
+  a
+    color: #D25
+    text-decoration: none
+  a:hover
+    color: #A12
   li
-    list-style-type: disc
-    margin-left: 1em
-.count td
-  font-size: 4em
+  // margin-left: 1em
 
-.big-number
-  float: left
+.statistics
+  margin-left: 2em
   margin-top: 1em
-  margin-right: 3em
-  text-align: center
-
-  th
-    vertical-align: middle
-    text-align: left
-    padding-left: 1em
+  thead
+    th
+      text-align: center
+      border-bottom: solid 1px #ddd
+    th:first-child
+      border-right: solid 1px #ddd
+  td
+    text-align: right
+    font-size: 2em
+  td, th
+    padding: 10px
+    padding-left: 20px
+    padding-right: 20px
+  tbody
+    th
+      border-right: solid 1px #ddd
+h3
+  font-family: Helvetica
+  font-weight: normal
+th
+  vertical-align: middle
+  text-align: left
+  padding-left: 1em
 
 
 .recent-events
-  width: 700px
+  margin-left: 2em
+  width: 500px
 
   > li
     clear: both
     margin-top: 0.5em
-    // background-color: #ddd
+    //background-color: #eee
+    border-top: solid 1px #ddd
+    padding: 0.5em
+  > li:first-child
+    border-top: none
   img
     vertical-align: center
   h3
-    float: left
-    width: 250px
-    height: 38px
-    // background-color: #aaa
-    padding-top: 14px
-    padding-left: 1em
+    //background-color: #bbb
+    font-family: helvetica
     a
-      font-weight: bold
+      font-weight: normal
+      color: #D25
+      text-decoration: none
+    a:hover
+      color: #A12
+    .day
+      color: #888
+      font-size: 0.8em
+      font-family: Raleway
   img
     float: left
     margin-right: 0.5em
+    margin-top: 0.5em
   .meta
-    height: 52px
     float: right
-    width: 200px
-    // background-color: #aaa
+    //background-color: #aaa
     .sales
-      display: inline-block
-      width: 100px
       text-align: right
-      padding-top: 0.3em
       font-size: 2em
-    .day
-      margin-left: 0.5em
 h2
   margin-top: 1em
+  color: black
+  font-family: Raleway
+  font-weight: normal
+@font-face
+  font-family: Raleway
+  src: url('/font/raleway.otf')
