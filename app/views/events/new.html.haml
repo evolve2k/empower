@@ -4,7 +4,8 @@
   = stylesheet_link_tag("forms")
 
 - content_for(:js) do
-  = javascript_include_tag('jquery-1.4.2')
+  = javascript_include_tag('vendor/jquery-1.4.2')
+  = javascript_include_tag("vendor/jquery.enumerable")
   = javascript_include_tag('events/new')
 
 %h2 Event Wrapup
@@ -13,9 +14,12 @@
     %li
       %label{:style => 'float: left'} Where?
       %input
-    %li
+    %li{:class => 'who-input'}
       %label Who?
-      %input{:class => 'who-input'}
+      %input
+    %li{:class => 'template'}
+      %label
+      %input{:placeholder => 'Leave blank if no more', :class => 'no-label'}
     %li
       %label Weather?
       %select

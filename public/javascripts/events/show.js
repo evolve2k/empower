@@ -1,5 +1,5 @@
 (function(){
   $(document).ready(function() {
-    return $('form').formRowBuilder('who-input');
+    return $('.tableForm').formRowBuilder('sale-input');
   });
 })();
