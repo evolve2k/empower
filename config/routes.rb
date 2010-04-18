@@ -17,6 +17,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :roles
     admin.resources :locations
     admin.resources :regions
+    admin.resource :dashboard, :member => {:volunteer => :get}
   end
   map.root :controller => 'admin'
 end

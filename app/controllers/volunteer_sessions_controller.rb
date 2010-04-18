@@ -1,6 +1,6 @@
 class VolunteerSessionsController < ApplicationController
   layout "admin"
-  
+
   def new
     @volunteer_session = VolunteerSession.new
   end
@@ -8,8 +8,12 @@ class VolunteerSessionsController < ApplicationController
   def create
     @volunteer_session = VolunteerSession.new(params[:volunteer_session])
     if @volunteer_session.save
-      flash[:notice] = "Successfully logged in."
-      redirect_to admin_url
+      if current_volunteer.role
+        flash[:notice] = "Successfully logged in."
+        redirect_to admin_url
+      else
+        redirect_to volunteer_admin_dashboard_path
+      end
     else
       render :action => 'new'
     end
