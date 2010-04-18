@@ -3,12 +3,11 @@
   = stylesheet_link_tag("forms")
   = stylesheet_link_tag("application")
 
-%h1
-  Bondi Market
-  %span.actions
-    (
-    = link_to("Edit", edit_admin_event_path(@event))
-    )
+%h2= @event.name
+= link_to("Edit this event", edit_admin_event_path(@event), :class => "edit_button")
+
+%div.clear
+
 %dl
   %dt Date
   %dd= @event.event_date.strftime('%d %B, %Y')
