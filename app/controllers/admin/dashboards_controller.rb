@@ -1,5 +1,6 @@
 class Admin::DashboardsController < ApplicationController
-  layout 'admin'
+  # layout 'admin' - # No, this makes this page ugly
+
   class Event < Struct.new(:title, :sales, :day, :volunteers); end;
 
   def volunteer
