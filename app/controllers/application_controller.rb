@@ -1,6 +1,3 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
   before_filter :set_active_tab
   helper :all # include all helpers, all the time
@@ -8,7 +5,14 @@ class ApplicationController < ActionController::Base
 
   filter_parameter_logging :password
 
-    private
+protected
+
+  def set_active_tab
+    @active_tab = "volunteers"
+  end
+
+private
+
   def require_volunteer
     unless current_volunteer
       redirect_to volunteer_login_path
@@ -29,10 +33,5 @@ class ApplicationController < ActionController::Base
   def current_volunteer
     return @current_volunteer if defined?(@current_volunteer)
     @current_volunteer = current_volunteer_session && current_volunteer_session.record
-  end
-
-  protected
-  def set_active_tab
-    @active_tab = "volunteers"
   end
 end
