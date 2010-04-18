@@ -14,7 +14,7 @@
       .container
         %div#logo= image_tag("/images/cfc_logo_white.png")
         / %h1 empowering communities
-        - if logged_in?
+        - if current_volunteer.try(:role)
           %ul
             %li= link_to "Volunteers", admin_volunteers_path, :class => (@active_tab == 'volunteers' ? "active" : nil)
             %li= link_to "Events", admin_events_path, :class => (@active_tab == 'events' ? "active" : nil)

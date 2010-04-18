@@ -4,7 +4,9 @@
   = stylesheet_link_tag("compiled/events/volunteer")
 
 = image_tag('mockup/xavier-100px.jpg', :class => 'header-thumbnail')
-%h1 Hi Xavier! Welcome back.
+%h1
+  Hi Xavier! Welcome back.
+  %span.actions= link_to("Logout", volunteer_logout_path, :method => :delete)
 
 %h2 Things You Can Do
 %ul.nav

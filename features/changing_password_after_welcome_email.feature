@@ -11,8 +11,7 @@ Feature: Changing password after welcome email
       | Surname     | Avery           |
       | Email       | tyson@avery.com |
     And I press "Create Volunteer"
+    And 1 email should be delivered to "tyson@avery.com"
     Then I should be on the admin volunteer page for "tyson@avery.com"
     And I should see "Tyson Avery"
     And 1 email should be delivered to "tyson@avery.com"
-    
-  

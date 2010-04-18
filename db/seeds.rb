@@ -17,10 +17,11 @@ Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "sc
   )
 end
 
-Role.create!(
+role = Role.create!(
   :name        => "admin",
   :description => "has access to everything"
 )
+Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "admin@example.com", :password => "admin", :password_confirmation => "admin", :role => role)
 
 Role.create!(
   :name        => "national",
@@ -53,7 +54,7 @@ end
 
 10.times do
   Event.create!(
-    :creator_id     => Volunteer.find(:first, :order => "rand()").id,
+    :creator_id     => Volunteer.all.rand.id,
     :location_id    => 1,
     :weather        => ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand,
     :crowd_size     => ['Busy', 'Not Busy', 'Average'].rand,

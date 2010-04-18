@@ -9,7 +9,7 @@ gem "mysql"
 gem "paperclip"
 
 group :development do
-  # gem "pg" # Xavier is using this
+  gem "pg" if %w(xavier).include?(`whoami`.chomp)
 end
 
 group :test do
