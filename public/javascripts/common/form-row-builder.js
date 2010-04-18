@@ -12,7 +12,6 @@
     return $.fn.extend({
       formRowBuilder: function formRowBuilder(klass) {
         var parent, template;
-        console.log("HEY " + klass);
         parent = this;
         template = parent.find('.template');
         return parent.find("." + klass + " input").live('keyup', function() {

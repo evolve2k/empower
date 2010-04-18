@@ -13,7 +13,6 @@
 (($) ->
   $.fn.extend({
     formRowBuilder: (klass) ->
-      console.log("HEY $klass")
       parent: this
       template: parent.find('.template')
       parent.find(".$klass input").live 'keyup', () ->
