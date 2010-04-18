@@ -21,8 +21,9 @@
             %li= link_to "badges", admin_badges_path, :class => (@active_tab == 'badges' ? "active" : nil)
             %li= link_to "locations", admin_locations_path, :class => (@active_tab == 'locations' ? "active" : nil)
             %li= link_to "region", admin_regions_path, :class => (@active_tab == 'region' ? "active" : nil)
+            %li= link_to "roles", admin_roles_path, :class => (@active_tab == 'roles' ? "active" : nil)
             / %li= link_to "products"
-            %li= link_to 'Logout', volunteer_logout_path
+            %li= link_to 'logout', volunteer_logout_path
 
     #main
       .container
