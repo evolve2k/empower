@@ -13,6 +13,12 @@ Badge.blueprint do
   threshold 1
 end
 
+Permission.blueprint do
+end
+
+Role.blueprint do
+end
+
 Volunteer.blueprint do
   email
   password 'm00c0w'

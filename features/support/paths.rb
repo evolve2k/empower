@@ -18,9 +18,6 @@ module NavigationHelpers
     when /the volunteer session page/
       '/volunteer_sessions'  
       
-    when /^the (.+?) page$/                                         # translate to named route
-      send "#{$1.downcase.gsub(' ','_')}_path"
-          
     # added by script/generate pickle path
 
     when /^#{capture_model}(?:'s)? page$/                           # eg. the forum's page
