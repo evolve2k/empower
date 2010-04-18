@@ -1,0 +1,8 @@
+%h2 Locations
+= link_to "New location", new_admin_location_path, :class => "add_button"
+
+%table#locations.list
+  %tbody
+    - for location in @locations
+      %tr[location]
+        %td= link_to location, [:edit, :admin, location]
