@@ -31,6 +31,7 @@ Volunteer.blueprint(:with_photo) do
 end
 
 Event.blueprint do
+  name '#{ Faker::Company.name }'
   creator_id 1
   location_id 1
   weather { ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand }

@@ -13,12 +13,11 @@ describe Event do
 
   describe "relationships" do
     it { should belong_to :location }
-    it { should have_one :volunteer }
+    it { should belong_to :volunteer }
   end
 
   describe "" do
     it { should validate_presence_of(:name) }
-    it { should validate_presence_of(:permalink) }
     it { should validate_presence_of(:location_id) }
     it { should validate_presence_of(:creator_id) }
     it { should validate_presence_of(:event_date) }

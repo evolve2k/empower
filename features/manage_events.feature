@@ -28,7 +28,7 @@ Feature: Manage event administration
     And I should see "Create an event"
 
   Scenario: Admin Events Index page
-    Given an event: "test" exists
+    Given an event: "test" exists with name: "test"
     Given I am on the admin events page
     Then I should not see "Sorry there are no events"
     And I should see "Create an event"

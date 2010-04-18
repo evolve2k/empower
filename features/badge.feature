@@ -8,5 +8,11 @@ Feature: Badge
     Given I am logged in
     When I go to the admin badges page
     Then I should be forbidden
-
   
+  @wip 
+  Scenario: View all badges
+    Given I am on the admin page
+    And I link to "badges"
+    Then I should see a list of badges
+
+

@@ -10,12 +10,17 @@ form.formtastic
   +stack-form(95%, "full", 0, "buttons-left", "select-auto")
 
 #header
-  height: 63px
-  background: #0E7F07
+  height: 120px
+  background: #265037
+
+  .container
+    position: relative
   
   #logo
     float: right
     border-top: 0
+    img
+      height: 120px
   
   h1
     font-size: 32px
@@ -24,19 +29,23 @@ form.formtastic
     float: right
   
   ul
+    position: absolute
+    bottom: 0
     display: none
     +horizontal-list
-    margin-top: 25px
+    vertical-align: bottom
     a
-      color: #000
+      color: #ddd
       display: block
-      padding: 10px 20px
-      background: #DDD
+      padding: 5px 5px
+      vertical-align: bottom
       text-decoration: none
       &:hover
         background: #FFF
+        color: #333
       &.active
-        background: #FFF
+        background: #fff
+        color: #333
         
 #main
   padding: 20px 0
