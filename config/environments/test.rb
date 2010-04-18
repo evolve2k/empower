@@ -33,3 +33,4 @@ config.gem 'pickle',                  :version => '0.2.8',    :lib => false
 config.gem 'faker',                   :version => '0.3.1',    :lib => false
 config.gem 'remarkable_activerecord', :version => '3.1.13'
 config.gem 'shoulda',                 :version => '2.10.3'
+config.gem "factory_girl",            :version => '1.2.4', :lib => false

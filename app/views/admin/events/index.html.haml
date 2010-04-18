@@ -1,15 +1,17 @@
-- if @events.size==0
+- if @events.empty?
   Sorry there are no events,
   = link_to "Create one now", new_admin_event_path
 - else
   Foo
-%table
-  %tr
-    %th What
-    %th Where
-    %th When
-
-  - @events.each do |event|
+%table.list
+  %thead
     %tr
-      %td= img(event.weather)
-      %td= event.location_id
+      %th What
+      %th Where
+      %th When
+      
+  %tbody
+    - @events.each do |event|
+      %tr
+        %td= img(event.weather)
+        %td= event.location_id

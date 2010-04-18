@@ -7,38 +7,40 @@
   = javascript_include_tag('jquery-1.4.2')
   = javascript_include_tag('events/new')
 
-%h2 Event Wrapup
-%form{:action => '/events/1'}
-  %ul
-    %li
-      %label{:style => 'float: left'} Where?
-      .fields
-        %input
-    %li
-      %label Who?
-      .fields{:style => 'width: 150px;'}
-        %input{:class => 'who-input'}
-    %li
-      %label Weather?
-      .fields
-        %select
-          %option Beautiful
-          %option So hot!
-          %option Meh
-          %option Bit nippy
-          %option Needed an extra jumper
-          %option Monsoon
-    %li
-      %label Crowd?
-      .fields
-        %select
-          %option Packed
-          %option Meh
-          %option Scarse
-    %li
-      %label How'd it go?
-      .fields
-        %textarea
-    %li
-      %input{:type => 'submit', :value => 'Next', :class => 'no-label'}
-
+.centered
+  %h2 Event Wrapup
+  %form.formtastic{:action => '/events/1'}
+    %ul
+      %li
+        %label{:style => 'float: left'} Where?
+        .fields
+          %input
+      %li
+        %label Who?
+        .fields{:style => 'width: 150px;'}
+          %input{:class => 'who-input'}
+      %li
+        %label Weather?
+        .fields
+          %select
+            %option Beautiful
+            %option So hot!
+            %option Meh
+            %option Bit nippy
+            %option Needed an extra jumper
+            %option Monsoon
+      %li
+        %label Crowd?
+        .fields
+          %select
+            %option Packed
+            %option Meh
+            %option Scarse
+      %li
+        %label How'd it go?
+        .fields
+          %textarea
+    %fieldset.buttons
+      %ol
+        %li.commit
+          %input.update{:type => "submit", :value => "Next",  :name => "commit"}
