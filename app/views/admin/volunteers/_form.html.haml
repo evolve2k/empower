@@ -1,10 +1,14 @@
 .centered
-  - semantic_form_for [:admin, @volunteer] do |volunteer_form|
+  - semantic_form_for [:admin, @volunteer], :html => {:multipart => true} do |volunteer_form|
     = volunteer_form.error_messages
     - volunteer_form.inputs do
       = volunteer_form.input :given_names
       = volunteer_form.input :surname
-      = volunteer_form.input :preffered_name
+      = volunteer_form.input :photo
+      - if @volunteer.photo.exists?
+        = link_to(image_tag(@volunteer.photo.url, :width => 50), @volunteer.photo.url, :target => '_blank')
+      = volunteer_form.input :about
+      = volunteer_form.input :prefered_name
       = volunteer_form.input :email
       = volunteer_form.input :skype_name
       = volunteer_form.input :mobile

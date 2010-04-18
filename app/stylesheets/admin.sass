@@ -1,5 +1,8 @@
 @import partials/base.sass
 
+.clear
+  clear: both
+
 .container
   +container
   
@@ -11,7 +14,7 @@ form.formtastic
 
 #header
   height: 120px
-  background: #265037
+  background: url("../../images/header_grad.jpg") repeat scroll 0 0 transparent
 
   .container
     position: relative
@@ -49,7 +52,25 @@ form.formtastic
         
 #main
   padding: 20px 0
-  
+
+  h2
+    color: #265037
+    font-weight: bold
+    font-variant: small-caps
+    float: left
+
+  .add_button
+    background: #265037
+    color: #fff
+    padding: 10px
+    float: right
+
+  .edit_button
+    background: #502637
+    color: #fff
+    padding: 10px
+    float: right
+
   .container
     position: relative
     z-index: 100
@@ -65,6 +86,9 @@ table#volunteers
   tr
     &:hover
       background: #EFEFEF
+    &.template
+      display:none
+
   a
     color: #000
     display: block

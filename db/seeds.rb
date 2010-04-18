@@ -53,7 +53,7 @@ end
 
 10.times do
   Event.create!(
-    :creator_id     => Volunteer.all.rand.id,
+    :creator_id     => Volunteer.find(:first, :order => "rand()").id,
     :location_id    => 1,
     :weather        => ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand,
     :crowd_size     => ['Busy', 'Not Busy', 'Average'].rand,

@@ -1,4 +1,6 @@
-%p= link_to('New badge', new_admin_badge_path)
+%h2 Badges
+
+%p= link_to('New badge', new_admin_badge_path, :class => "add_button")
 
 %table
   - for badge in Badge.all

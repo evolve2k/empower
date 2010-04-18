@@ -10,12 +10,10 @@
   = javascript_include_tag('common/form-row-builder')
   = javascript_include_tag('events/show')
 
-%h1
-  Bondi Market
-  %span.actions
-    (
-    = link_to("Edit", '#')
-    )
+%h2= @event.name
+
+%div.clear
+
 %dl
   %dt When?
   %dd 17 May 2010

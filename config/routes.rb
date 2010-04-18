@@ -3,6 +3,9 @@ ActionController::Routing::Routes.draw do |map|
 
   # Mock controllers
   map.resources :events
+  
+  # [z] Volunteer "profile" page
+  map.resources :volunteers, :only => :show
 
   map.volunteer_login '/volunteer-login', :controller => 'volunteer_sessions', :action => 'new'
   map.namespace :admin do |admin|
