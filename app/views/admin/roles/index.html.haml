@@ -5,4 +5,4 @@
     - for role in @roles
       %tr[role]
         %td= link_to role, [:edit, :admin, role]
-        %td= link_to role.permissions.map(&:to_s).to_s, [:edit, :admin, role]
+        %td= link_to role.permissions.map(&:to_s).join(", "), [:edit, :admin, role]
