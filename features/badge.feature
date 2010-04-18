@@ -9,4 +9,4 @@ Feature: Badge
     When I go to the admin badges page
     Then I should be forbidden
 
-
+  

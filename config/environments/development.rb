@@ -15,3 +15,6 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+# We are using bundler ('gem install bundler') to manage gems. 
+# LIST GEM DEPENDANCIES IN THE PROJECT ROOT FILE CALLED 'Gemfile' 

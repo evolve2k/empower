@@ -27,9 +27,8 @@ config.action_mailer.delivery_method = :test
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
 
-#config.gem 'rspec-rails',             :version => '>= 1.3.2', :lib => false unless File.directory?(File.join(Rails.root, 'vendor/plugins/rspec-rails'))
-#config.gem 'machinist',               :version => '1.0.6',    :lib => false
-#config.gem 'pickle',                  :version => '0.2.8',    :lib => false
-#config.gem 'faker',                   :version => '0.3.1',    :lib => false
-#config.gem 'remarkable_activerecord', :version => '3.1.13'
-#config.gem 'shoulda',                 :version => '2.10.3'
+
+# We are using bundler ('gem install bundler') to manage gems. 
+# LIST GEM DEPENDANCIES IN THE PROJECT ROOT FILE CALLED 'Gemfile' 
+#
+# config.gem 'rspec-rails'  <-- THESE NO LONGER LIVE HERE             

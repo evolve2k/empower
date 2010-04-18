@@ -1,17 +1,21 @@
+= link_to "Create an event", new_admin_event_path
+
 - if @events.empty?
-  Sorry there are no events,
-  = link_to "Create one now", new_admin_event_path
+  Sorry there are no events
 - else
-  Foo
-%table.list
-  %thead
-    %tr
-      %th What
-      %th Where
-      %th When
-      
-  %tbody
-    - @events.each do |event|
+  %table.list
+    %thead
       %tr
-        %td= img(event.weather)
-        %td= event.location_id
+        %th What
+        %th Where
+        %th When
+        %th Weather
+        %th Earned
+    %tbody
+      - @events.each do |event|
+        %tr
+          %td= link_to event.name, admin_event_path(event)
+          %td= event.location_id
+          %td= event.event_date.strftime('%d %B, %Y')
+          %td= event.weather
+          %td $100

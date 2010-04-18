@@ -13,8 +13,22 @@ Badge.blueprint do
   threshold 1
 end
 
+Permission.blueprint do
+end
+
+Role.blueprint do
+end
+
 Volunteer.blueprint do
   email
   password 'm00c0w'
   password_confirmation 'm00c0w'
+end
+
+Event.blueprint do
+  creator_id 1
+  location_id 1
+  weather { ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand }
+  crowd_size { ['Busy', 'Not Busy', 'Average'].rand }
+  event_date { 1.months.ago }
 end

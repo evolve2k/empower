@@ -1,0 +1,7 @@
+- f.inputs :name => "New Event", :id => "inputs" do
+  = f.input :name, :label => "Name", :hint => "What is the name of the event?", :required => false
+  = f.input :location_id, :label => "Location", :as => :string, :hint => "Where is the event?", :required => false
+  = f.input :weather, :as => :select, :hint => "How was the weather for the event?", :collection => ["Beautiful", "So hot!", "Meh","Bit nippy", "Needed an extra jumper", "Monsoon"]
+  = f.input :crowd_size, :as => :select, :hint => "How was the crowd size for the event?", :collection => ["Busy", "Not Busy", "Average"]
+  = f.input :event_date,  :as => :date, :hint => "When is the event kicking off?", :selected => nil
+  = f.buttons :commit
