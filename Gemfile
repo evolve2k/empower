@@ -7,6 +7,10 @@ gem "haml"
 gem "formtastic"
 gem "mysql"
 
+group :development do
+  gem "pg" # Xavier is using this
+end
+
 group :test do
   gem "rspec"
   gem "rspec-rails"
