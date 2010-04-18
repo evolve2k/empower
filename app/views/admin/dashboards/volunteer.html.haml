@@ -6,14 +6,16 @@
 = image_tag('mockup/xavier-100px.jpg', :class => 'header-thumbnail')
 %h1
   Hi Xavier! Welcome back.
-  %span.actions= link_to("Logout", volunteer_logout_path, :method => :delete)
+  %span.actions= link_to("Logout", volunteer_logout_path, :method => :delete, :style => "text-decoration: none; float: right")
 
 %h2 Things You Can Do
+.clear
 %ul.nav
   %li= link_to("Write an event wrap up and report sales")
   %li= link_to("View or edit your profile")
   %li= link_to("Find other volunteers")
 %h2 Market Numbers For Your Region
+.clear
 %table.statistics
   %thead
     %tr
@@ -52,6 +54,7 @@
 
 %br{:style => 'clear:both'}
 %h2 Recent Markets You Attended
+.clear
 %ul.recent-events
   - @events.each do |event|
     %li

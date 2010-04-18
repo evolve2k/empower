@@ -1,4 +1,5 @@
 class Admin::DashboardsController < ApplicationController
+  layout 'admin'
   class Event < Struct.new(:title, :sales, :day, :volunteers); end;
 
   def volunteer
