@@ -66,6 +66,12 @@ form.formtastic
     float: right
 
   .edit_button
+    background: #263750
+    color: #fff
+    padding: 10px
+    float: right
+
+  .delete_button
     background: #502637
     color: #fff
     padding: 10px
@@ -99,4 +105,23 @@ table
   thead
     th
       background: #FFF
-      
+
+#main
+  table
+    a
+      display: block
+      padding: 5px 5px
+      vertical-align: bottom
+      text-decoration: none
+      &.edit_button
+        background: #263750
+        color: #fff
+        padding: 10px
+        display: inline
+        float: none
+      &.delete_button
+        background: #502637
+        color: #fff
+        padding: 10px
+        display: inline
+        float: none

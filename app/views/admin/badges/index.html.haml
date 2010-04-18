@@ -8,5 +8,5 @@
       %td= badge
       %td= truncate(badge.description)
       %td
-        = link_to('edit', edit_admin_badge_path(badge))
-        = link_to('destroy', [:admin, badge], :method => :delete, :confirm => "Delete #{badge}?")
+        = link_to('edit', edit_admin_badge_path(badge), :class => "edit_button")
+        = link_to('destroy', [:admin, badge], :method => :delete, :confirm => "Delete #{badge}?", :class => "delete_button")
