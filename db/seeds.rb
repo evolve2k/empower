@@ -17,6 +17,40 @@ Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "sc
   )
 end
 
+Role.create!(
+  :name        => "admin",
+  :description => "has access to everything"
+)
+
+Role.create!(
+  :name        => "national",
+  :description => "national only"
+)
+
+Role.create!(
+  :name        => "regional",
+  :description => "regional only"
+)
+
+Role.create!(
+  :name        => "clerical",
+  :description => "only day to day office activities ie: adding members"
+)
+
+20.times do
+  Permission.create!(
+    :name        => Faker::Name.first_name,
+    :description => Faker::Lorem.sentence
+  )
+end
+
+Role.all.each do |role|
+  6.times do
+    role.permissions << Permission.all.rand
+  end
+  role.save!
+end
+
 10.times do
   Event.create!(
     :creator_id     => Volunteer.find(:first, :order => "random()").id,

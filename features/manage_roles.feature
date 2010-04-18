@@ -27,11 +27,10 @@ Feature: Manage roles
     And I should see "Successfully updated!"
     And a role should exist with name: "executive", description: "always stuffs around"
     
-  @wip
   Scenario: Adding a permission to a role
     Given a permission exists with name: "manage volunteers", description: "update info about the slaves"
     And I follow "manager"
-    When check ""
+    When check "manage volunteers"
     And press "Update Role"
     Then I should be on the admin roles page
     And I should see "Successfully updated!"
