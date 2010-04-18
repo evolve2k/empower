@@ -16,11 +16,11 @@
         / %h1 empowering communities
         - if logged_in?
           %ul
-            %li= link_to "volunteers", admin_volunteers_path, :class => "active"
-            %li= link_to "events", admin_events_path
-            %li= link_to "badges", admin_badges_path
-            %li= link_to "locations"
-            %li= link_to "region"
+            %li= link_to "volunteers", admin_volunteers_path, :class => (@active_tab == 'volunteers' ? "active" : nil)
+            %li= link_to "events", admin_events_path, :class => (@active_tab == 'events' ? "active" : nil)
+            %li= link_to "badges", admin_badges_path, :class => (@active_tab == 'badges' ? "active" : nil)
+            %li= link_to "locations", admin_locations_path, :class => (@active_tab == 'locations' ? "active" : nil)
+            %li= link_to "region", admin_regions_path, :class => (@active_tab == 'region' ? "active" : nil)
             / %li= link_to "products"
             %li= link_to 'Logout', volunteer_logout_path
 

@@ -10,5 +10,9 @@ class Admin::VolunteersController < AdminController
     def collection
       @collection ||= Volunteer.sorted
     end
+
+    def set_active_tab
+      @active_tab = "volunteers"
+    end
 end
 

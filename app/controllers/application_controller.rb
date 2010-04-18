@@ -2,6 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  before_filter :set_active_tab
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
@@ -28,5 +29,10 @@ class ApplicationController < ActionController::Base
   def current_volunteer
     return @current_volunteer if defined?(@current_volunteer)
     @current_volunteer = current_volunteer_session && current_volunteer_session.record
+  end
+
+  protected
+  def set_active_tab
+    @active_tab = "volunteers"
   end
 end
