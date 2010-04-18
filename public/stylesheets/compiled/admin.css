@@ -756,25 +756,27 @@ form.formtastic .label {
 
 /* line 15, ../../../app/stylesheets/admin.sass */
 #header {
-  height: 120px;
+  height: 130px;
   background: url("../../images/header_grad.jpg") repeat scroll 0 0 transparent; }
   /* line 19, ../../../app/stylesheets/admin.sass */
   #header .container {
+    height: 100%;
     position: relative; }
-  /* line 22, ../../../app/stylesheets/admin.sass */
+  /* line 23, ../../../app/stylesheets/admin.sass */
   #header #logo {
     float: right;
+    margin-top: 15px;
     border-top: 0; }
-    /* line 25, ../../../app/stylesheets/admin.sass */
+    /* line 27, ../../../app/stylesheets/admin.sass */
     #header #logo img {
-      height: 120px; }
-  /* line 28, ../../../app/stylesheets/admin.sass */
+      height: 100px; }
+  /* line 30, ../../../app/stylesheets/admin.sass */
   #header h1 {
     font-size: 32px;
     color: #052F03;
     margin-top: 32px;
     float: right; }
-  /* line 34, ../../../app/stylesheets/admin.sass */
+  /* line 36, ../../../app/stylesheets/admin.sass */
   #header ul {
     position: absolute;
     bottom: 0;
@@ -804,67 +806,108 @@ form.formtastic .label {
       /* line 42, ../../../../../.bundle/ruby/1.9.1/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
       #header ul li.last {
         padding-right: 0px; }
-    /* line 40, ../../../app/stylesheets/admin.sass */
+    /* line 42, ../../../app/stylesheets/admin.sass */
     #header ul a {
       color: #ddd;
       display: block;
       padding: 5px 5px;
       vertical-align: bottom;
       text-decoration: none; }
-      /* line 46, ../../../app/stylesheets/admin.sass */
+      /* line 48, ../../../app/stylesheets/admin.sass */
       #header ul a:hover {
         background: #FFF;
         color: #333; }
-      /* line 49, ../../../app/stylesheets/admin.sass */
+      /* line 51, ../../../app/stylesheets/admin.sass */
       #header ul a.active {
         background: #fff;
         color: #333; }
 
-/* line 53, ../../../app/stylesheets/admin.sass */
+/* line 55, ../../../app/stylesheets/admin.sass */
 #main {
   padding: 20px 0; }
-  /* line 56, ../../../app/stylesheets/admin.sass */
+  /* line 58, ../../../app/stylesheets/admin.sass */
   #main h2 {
     color: #265037;
     font-weight: bold;
     font-variant: small-caps;
     float: left; }
-  /* line 62, ../../../app/stylesheets/admin.sass */
+  /* line 64, ../../../app/stylesheets/admin.sass */
   #main .add_button {
     background: #265037;
     color: #fff;
     padding: 10px;
     float: right; }
-  /* line 68, ../../../app/stylesheets/admin.sass */
+  /* line 70, ../../../app/stylesheets/admin.sass */
   #main .edit_button {
+    background: #263750;
+    color: #fff;
+    padding: 10px;
+    float: right; }
+  /* line 76, ../../../app/stylesheets/admin.sass */
+  #main .delete_button {
     background: #502637;
     color: #fff;
     padding: 10px;
     float: right; }
-  /* line 74, ../../../app/stylesheets/admin.sass */
+  /* line 82, ../../../app/stylesheets/admin.sass */
   #main .container {
     position: relative;
     z-index: 100; }
 
-/* line 78, ../../../app/stylesheets/admin.sass */
+/* line 86, ../../../app/stylesheets/admin.sass */
 .centered {
   width: 500px;
   margin: 0 auto; }
 
-/* line 83, ../../../app/stylesheets/admin.sass */
+/* line 90, ../../../app/stylesheets/admin.sass */
+#volunteer {
+  overflow: hidden; }
+
+/* line 93, ../../../app/stylesheets/admin.sass */
+#volunteer-profile {
+  float: left;
+  margin-left: 20px; }
+
+/* line 97, ../../../app/stylesheets/admin.sass */
+#volunteer-sidebar {
+  float: left;
+  width: 200px; }
+
+/* line 102, ../../../app/stylesheets/admin.sass */
 table#volunteers td {
   padding: 0;
   border-bottom: 1px solid #EFEFEF; }
-/* line 87, ../../../app/stylesheets/admin.sass */
+/* line 106, ../../../app/stylesheets/admin.sass */
 table#volunteers tr:hover {
   background: #EFEFEF; }
-/* line 92, ../../../app/stylesheets/admin.sass */
+/* line 111, ../../../app/stylesheets/admin.sass */
 table#volunteers a {
   color: #000;
   display: block;
   padding: 10px 5px;
   text-decoration: none; }
 
-/* line 100, ../../../app/stylesheets/admin.sass */
+/* line 119, ../../../app/stylesheets/admin.sass */
 table thead th {
   background: #FFF; }
+
+/* line 124, ../../../app/stylesheets/admin.sass */
+#main table a {
+  display: block;
+  padding: 5px 5px;
+  vertical-align: bottom;
+  text-decoration: none; }
+  /* line 129, ../../../app/stylesheets/admin.sass */
+  #main table a.edit_button {
+    background: #263750;
+    color: #fff;
+    padding: 10px;
+    display: inline;
+    float: none; }
+  /* line 135, ../../../app/stylesheets/admin.sass */
+  #main table a.delete_button {
+    background: #502637;
+    color: #fff;
+    padding: 10px;
+    display: inline;
+    float: none; }
