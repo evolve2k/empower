@@ -1,4 +1,7 @@
-= link_to "Create an event", new_admin_event_path
+%h2 Events
+
+= link_to "Create an event", new_admin_event_path, :class => "add_button"
+
 
 - if @events.empty?
   Sorry there are no events
