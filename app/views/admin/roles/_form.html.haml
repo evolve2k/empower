@@ -1,4 +1,8 @@
 .centered
   - semantic_form_for [:admin, @role] do |role_form|
-    = role_form.inputs
+    - role_form.inputs do
+      = role_form.input :name
+      = role_form.input :description
+      = role_form.input :permissions, :as => :check_boxes
+    
     = role_form.buttons
