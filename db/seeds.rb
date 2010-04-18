@@ -8,7 +8,7 @@ Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "sc
     :given_names           => "#{name} #{Faker::Name.first_name}",
     :surname               => Faker::Name.last_name,
     :email                 => Faker::Internet.email,
-    :skype_name            => name,
+    :skype_name            => ["#{Faker::Name.first_name.to_s.downcase}", ""].rand,
     :mobile                => Faker::PhoneNumber.phone_number,
     :home_phone            => Faker::PhoneNumber.phone_number,
     :work_phone            => Faker::PhoneNumber.phone_number,

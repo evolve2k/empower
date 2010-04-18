@@ -4,15 +4,15 @@
   %thead
     %tr
       %th
-      %th skype
       %th mobile
       %th home
       %th work
   %tbody
     - for volunteer in @volunteers
       %tr[volunteer]
-        %td= link_to volunteer, [:edit, :admin, volunteer]
-        %td= link_to volunteer.skype_name, [:edit, :admin, volunteer]
+        %td{:class => "volunteer"}
+          = link_to volunteer, [:edit, :admin, volunteer], :style => "float:left"
+          = link_to image_tag("skype.png"), "skype:#{volunteer.skype_name}", :style => "float:left"  unless volunteer.skype_name.blank?
         %td= link_to volunteer.mobile, [:edit, :admin, volunteer]
         %td= link_to volunteer.home_phone, [:edit, :admin, volunteer]
         %td= link_to volunteer.work_phone, [:edit, :admin, volunteer]
