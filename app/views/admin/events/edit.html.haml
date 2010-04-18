@@ -1,3 +1,4 @@
 %h2= "Editing #{ @event.name }"
+.clear
 - semantic_form_for [:admin, @event] do |f|
   = render :partial => "form", :locals => { :f => f }
