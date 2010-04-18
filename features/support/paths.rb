@@ -12,6 +12,8 @@ module NavigationHelpers
       '/'
     when /the volunteer login page/
       '/volunteer-login'
+    when /the admin volunteer page for "(.*)"/
+      admin_volunteer_path(Volunteer.find_by_email($1).id)
     when /the admin home page/
       '/admin'
 
