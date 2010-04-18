@@ -8,7 +8,7 @@ Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "sc
     :given_names           => "#{name} #{Faker::Name.first_name}",
     :surname               => Faker::Name.last_name,
     :email                 => Faker::Internet.email,
-    :skype_name            => ["#{Faker::Name.first_name.to_s.downcase}", ""].rand,
+    :skype_name            => "skypename",
     :mobile                => Faker::PhoneNumber.phone_number,
     :home_phone            => Faker::PhoneNumber.phone_number,
     :work_phone            => Faker::PhoneNumber.phone_number,
@@ -59,5 +59,70 @@ end
     :weather        => ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand,
     :crowd_size     => ['Busy', 'Not Busy', 'Average'].rand,
     :event_date     => (6.months.ago.to_date..6.months.from_now.to_date).to_a.rand,
-    :name           => Faker::Company.name)
+    :name           => ['Rundle Street', 'Rose Street Artists Market', 'Bondi Markets', 'Paddington Markets', 'Quarry Markets', 'The Rocks Market', 'Home Rug Party', 'Corporate event', 'Sydney Movie Night', 'Melbourne Movie Night', 'Adelaide Movie Night'].rand
+)
 end
+
+Badge.create!(
+  :name        => "Rug Newbie",
+  :description => "Completing first market stall",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Wet Sod",
+  :description => "Completed first rainy market",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Commando",
+  :description => "Completed 5 rainy markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Trooper",
+  :description => "Completed 10 markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Rugger",
+  :description => "Completed 25 markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Senior Rugger",
+  :description => "Completed 35 rainy markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Rugginator",
+  :description => "Completed 5 rainy markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Rugginator 2",
+  :description => "Completed 5 rainy markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
+Badge.create!(
+  :name        => "Rugginator Salvation",
+  :description => "THERE WAS NO RUGGINATOR 3. Completed 5 rainy markets",
+  :sql => "1",
+  :threshold => "1"
+  )
+
