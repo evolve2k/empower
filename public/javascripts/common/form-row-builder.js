@@ -26,7 +26,7 @@
             return lastRow.after(template.clone().addClass(klass).removeClass('template'));
           } else {
             secondLastRow = lastRow.prevAll("." + klass).first();
-            return isEmpty(secondLastRow) ? lastRow.remove() : null;
+            return secondLastRow.size() === 1 && isEmpty(secondLastRow) ? lastRow.remove() : null;
           }
         });
       }
