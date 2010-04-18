@@ -3,8 +3,16 @@
 = link_to "New role", new_admin_role_path, :class => "add_button"
 
 %table#volunteers.list
+  %thead
+    %tr
+      %th Name
+      %th Description
+      %th Actions
   %tbody
     - for role in @roles
       %tr[role]
         %td= link_to role, [:edit, :admin, role]
         %td= link_to role.permissions.map(&:to_s).join(", "), [:edit, :admin, role]
+        %td
+          = link_to "edit", [:edit, :admin, role], :class => "edit_button"
+          = link_to('destroy', [:admin, role], :method => :delete, :confirm => "Delete #{role}?", :class => "delete_button")

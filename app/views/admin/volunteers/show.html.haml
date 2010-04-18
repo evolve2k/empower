@@ -1,0 +1,25 @@
+#volunteer
+  #volunteer-sidebar
+    .info
+      .photo= image_tag(@volunteer.photo(nil))
+      .details
+        details
+    .sidebar
+      %input.search
+      .badge-heading
+        %h3 Badges
+        - link_to('badge-info') do
+          = image_tag('info.png')
+          What's this?
+      - if @volunteer.badges.empty?
+        %p You don't have any badges yet.
+      - else
+        = render(@volunteer.achievements)
+
+  #volunteer-profile
+    %h2= @volunteer
+    .clear
+    .about= @volunteer.about
+    - if @volunteer.recent_markets.any?
+      %h3 Recent markets
+      .recent-markets= render(:partial => 'market', :collection => @volunteer.recent_markets)

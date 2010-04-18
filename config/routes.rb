@@ -2,8 +2,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :volunteer_sessions
 
   # Mock controllers
-  map.resources :events
-  
+  map.resources :events, :collection => {:volunteer => :get}
+
   # [z] Volunteer "profile" page
   map.resources :volunteers, :only => :show
 

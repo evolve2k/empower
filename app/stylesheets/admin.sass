@@ -13,17 +13,19 @@ form.formtastic
   +stack-form(95%, "full", 0, "buttons-left", "select-auto")
 
 #header
-  height: 120px
+  height: 130px
   background: url("../../images/header_grad.jpg") repeat scroll 0 0 transparent
 
   .container
+    height: 100%
     position: relative
   
   #logo
     float: right
+    margin-top: 15px
     border-top: 0
     img
-      height: 120px
+      height: 100px
   
   h1
     font-size: 32px
@@ -66,6 +68,12 @@ form.formtastic
     float: right
 
   .edit_button
+    background: #263750
+    color: #fff
+    padding: 10px
+    float: right
+
+  .delete_button
     background: #502637
     color: #fff
     padding: 10px
@@ -78,7 +86,18 @@ form.formtastic
 .centered
   width: 500px
   margin: 0 auto
-  
+
+#volunteer
+  overflow: hidden
+
+#volunteer-profile
+  float: left
+  margin-left: 20px
+
+#volunteer-sidebar
+  float: left
+  width: 200px
+
 table#volunteers
   td
     padding: 0
@@ -99,4 +118,23 @@ table
   thead
     th
       background: #FFF
-      
+
+#main
+  table
+    a
+      display: block
+      padding: 5px 5px
+      vertical-align: bottom
+      text-decoration: none
+      &.edit_button
+        background: #263750
+        color: #fff
+        padding: 10px
+        display: inline
+        float: none
+      &.delete_button
+        background: #502637
+        color: #fff
+        padding: 10px
+        display: inline
+        float: none

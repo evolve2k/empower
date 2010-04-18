@@ -1,0 +1,66 @@
+- content_for(:css) do
+  = stylesheet_link_tag("reset")
+  = stylesheet_link_tag("application")
+  = stylesheet_link_tag("compiled/events/volunteer")
+
+= image_tag('mockup/xavier-100px.jpg', :class => 'header-thumbnail')
+%h1 Hi Xavier! Welcome back.
+
+%h2 Things You Can Do
+%ul.nav
+  %li= link_to("Write an event wrap up and report sales")
+  %li= link_to("View or edit your profile")
+  %li= link_to("Find other volunteers")
+%h2 Market Numbers For Your Region
+%table.statistics
+  %thead
+    %tr
+      %th
+      %th Weekly Avg
+      %th 6 Month Total
+  %tbody
+    %tr
+      %th Markets
+      %td.big-number 43.5
+      %td.big-number 188
+    %tr
+      %th Sales
+      %td $1,625
+      %td $4,780
+//
+//.big-number
+//  %table
+//    %tr.count
+//      %td 43.5
+//      %th Markets
+//    %tr.sum
+//      %td $1625
+//      %th Sales
+//  %p 4 week rolling average
+//
+//.big-number
+//  %table
+//    %tr.count
+//      %td 88
+//      %th Markets
+//    %tr.sum
+//      %td $4780
+//      %th Sales
+//  %p.caption 6 month total
+
+%br{:style => 'clear:both'}
+%h2 Recent Markets You Attended
+%ul.recent-events
+  - @events.each do |event|
+    %li
+      .meta
+        %span.sales
+          = number_to_currency(event.sales, :precision => 0)
+      %h3
+        = link_to(event.title, '#')
+        %span.day
+          = event.day.strftime("%A, %d %B")
+      %ul
+        - event.volunteers.each do |volunteer|
+          %li= image_tag("mockup/#{volunteer}.jpg", :size => '50x50')
+      %br{:style => 'clear:both'}

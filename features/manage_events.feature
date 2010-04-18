@@ -17,8 +17,8 @@ Feature: Manage event administration
 
   Scenario: Admin Events Volunteer page (Menu navigation)
     Given I am on the new admin volunteer page
-    Then I should see "events"
-    And I follow "events"
+    Then I should see "Events"
+    When I follow "Events"
     Then I should be on the admin events page
 
   Scenario: Admin Events Index page (No content)

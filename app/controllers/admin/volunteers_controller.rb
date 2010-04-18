@@ -1,8 +1,6 @@
 class Admin::VolunteersController < AdminController
   resource_controller
   
-  show.wants.html { redirect_to @volunteer }
-  
   layout "admin"
   
   private

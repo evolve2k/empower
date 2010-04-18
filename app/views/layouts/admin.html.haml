@@ -16,12 +16,12 @@
         / %h1 empowering communities
         - if logged_in?
           %ul
-            %li= link_to "volunteers", admin_volunteers_path, :class => (@active_tab == 'volunteers' ? "active" : nil)
-            %li= link_to "events", admin_events_path, :class => (@active_tab == 'events' ? "active" : nil)
-            %li= link_to "badges", admin_badges_path, :class => (@active_tab == 'badges' ? "active" : nil)
-            %li= link_to "locations", admin_locations_path, :class => (@active_tab == 'locations' ? "active" : nil)
-            %li= link_to "region", admin_regions_path, :class => (@active_tab == 'region' ? "active" : nil)
-            %li= link_to "roles", admin_roles_path, :class => (@active_tab == 'roles' ? "active" : nil)
+            %li= link_to "Volunteers", admin_volunteers_path, :class => (@active_tab == 'volunteers' ? "active" : nil)
+            %li= link_to "Events", admin_events_path, :class => (@active_tab == 'events' ? "active" : nil)
+            %li= link_to "Badges", admin_badges_path, :class => (@active_tab == 'badges' ? "active" : nil)
+            %li= link_to "Locations", admin_locations_path, :class => (@active_tab == 'locations' ? "active" : nil)
+            %li= link_to "Region", admin_regions_path, :class => (@active_tab == 'region' ? "active" : nil)
+            %li= link_to "Roles", admin_roles_path, :class => (@active_tab == 'roles' ? "active" : nil)
             / %li= link_to "products"
             %li= link_to 'logout', volunteer_logout_path
 

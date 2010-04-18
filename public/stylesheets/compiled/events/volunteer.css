@@ -1,0 +1,120 @@
+/* line 1, ../../../../app/stylesheets/events/volunteer.sass */
+.header-thumbnail {
+  float: left; }
+
+/* line 4, ../../../../app/stylesheets/events/volunteer.sass */
+.intro {
+  font-size: 1.2em;
+  color: #aaa;
+  margin-left: 1em; }
+
+/* line 8, ../../../../app/stylesheets/events/volunteer.sass */
+h1 {
+  padding-left: 135px;
+  padding-top: 30px;
+  height: 70px;
+  font-family: Raleway; }
+
+/* line 13, ../../../../app/stylesheets/events/volunteer.sass */
+ul.nav {
+  margin-left: 2em;
+  margin-top: 1em;
+  font-size: 1.5em; }
+  /* line 17, ../../../../app/stylesheets/events/volunteer.sass */
+  ul.nav a {
+    color: #D25;
+    text-decoration: none; }
+  /* line 20, ../../../../app/stylesheets/events/volunteer.sass */
+  ul.nav a:hover {
+    color: #A12; }
+
+/* line 25, ../../../../app/stylesheets/events/volunteer.sass */
+.statistics {
+  margin-left: 2em;
+  margin-top: 1em; }
+  /* line 29, ../../../../app/stylesheets/events/volunteer.sass */
+  .statistics thead th {
+    text-align: center;
+    border-bottom: solid 1px #ddd; }
+  /* line 32, ../../../../app/stylesheets/events/volunteer.sass */
+  .statistics thead th:first-child {
+    border-right: solid 1px #ddd; }
+  /* line 34, ../../../../app/stylesheets/events/volunteer.sass */
+  .statistics td {
+    text-align: right;
+    font-size: 2em; }
+  /* line 37, ../../../../app/stylesheets/events/volunteer.sass */
+  .statistics td, .statistics th {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  /* line 42, ../../../../app/stylesheets/events/volunteer.sass */
+  .statistics tbody th {
+    border-right: solid 1px #ddd; }
+
+/* line 44, ../../../../app/stylesheets/events/volunteer.sass */
+h3 {
+  font-family: Helvetica;
+  font-weight: normal; }
+
+/* line 47, ../../../../app/stylesheets/events/volunteer.sass */
+th {
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 1em; }
+
+/* line 53, ../../../../app/stylesheets/events/volunteer.sass */
+.recent-events {
+  margin-left: 2em;
+  width: 500px; }
+  /* line 57, ../../../../app/stylesheets/events/volunteer.sass */
+  .recent-events > li {
+    clear: both;
+    margin-top: 0.5em;
+    border-top: solid 1px #ddd;
+    padding: 0.5em; }
+  /* line 63, ../../../../app/stylesheets/events/volunteer.sass */
+  .recent-events > li:first-child {
+    border-top: none; }
+  /* line 65, ../../../../app/stylesheets/events/volunteer.sass */
+  .recent-events img {
+    vertical-align: center; }
+  /* line 67, ../../../../app/stylesheets/events/volunteer.sass */
+  .recent-events h3 {
+    font-family: helvetica; }
+    /* line 70, ../../../../app/stylesheets/events/volunteer.sass */
+    .recent-events h3 a {
+      font-weight: normal;
+      color: #D25;
+      text-decoration: none; }
+    /* line 74, ../../../../app/stylesheets/events/volunteer.sass */
+    .recent-events h3 a:hover {
+      color: #A12; }
+    /* line 76, ../../../../app/stylesheets/events/volunteer.sass */
+    .recent-events h3 .day {
+      color: #888;
+      font-size: 0.8em;
+      font-family: Raleway; }
+  /* line 80, ../../../../app/stylesheets/events/volunteer.sass */
+  .recent-events img {
+    float: left;
+    margin-right: 0.5em;
+    margin-top: 0.5em; }
+  /* line 84, ../../../../app/stylesheets/events/volunteer.sass */
+  .recent-events .meta {
+    float: right; }
+    /* line 87, ../../../../app/stylesheets/events/volunteer.sass */
+    .recent-events .meta .sales {
+      text-align: right;
+      font-size: 2em; }
+
+/* line 90, ../../../../app/stylesheets/events/volunteer.sass */
+h2 {
+  margin-top: 1em;
+  color: black;
+  font-family: Raleway;
+  font-weight: normal; }
+
+@font-face {
+  font-family: Raleway;
+  src: url('/font/raleway.otf'); }
