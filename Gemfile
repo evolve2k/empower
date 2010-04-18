@@ -1,8 +1,7 @@
-# A sample Gemfile
 source :rubygems
 
 gem "rails", "2.3.5"
-gem "authlogic"        
+gem "authlogic"
 gem "compass"
 gem "haml"
 gem "formtastic"
@@ -10,12 +9,12 @@ gem "mysql"
 
 group :test do
   gem "rspec"
-  gem "rspec-rails"             
-  gem "machinist"               
-  gem "pickle"                  
-  gem "faker"                   
-  gem "remarkable_activerecord" 
-  gem "shoulda"     
+  gem "rspec-rails"
+  gem "machinist"
+  gem "pickle"
+  gem "faker"
+  gem "remarkable_activerecord"
+  gem "shoulda"
 end
 
 group :cucumber do
