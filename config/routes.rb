@@ -10,6 +10,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :volunteers
     admin.resources :badges
     admin.resources :roles
+    admin.resources :locations
+    admin.resources :regions
   end
   map.root :controller => 'root'
 end
