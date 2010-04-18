@@ -16,3 +16,4 @@ tmp/**/*
 tmp/restart.txt
 tmp/web*
 vendor/plugins/haml
+public/stylesheets/compiled/*
