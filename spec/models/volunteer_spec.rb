@@ -35,6 +35,16 @@ describe Volunteer do
       @manager.can_manage_volunteers?.should be_true
     end
     
+    context "and a executive role" do
+      before do
+        @manager.update_attributes(:roles => [Role.make(:name => "executive")])
+      end
+      
+      it "should be a manager or an executive" do
+        @manager.is_a_manager_or_executive?.should be_true
+      end      
+    end
+    
     context "and a volunteer" do
       before do
         @volunteer = Volunteer.make
