@@ -59,7 +59,7 @@ end
     :weather        => ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand,
     :crowd_size     => ['Busy', 'Not Busy', 'Average'].rand,
     :event_date     => (6.months.ago.to_date..6.months.from_now.to_date).to_a.rand,
-    :name           => ['Rundle Street', 'Rose Street Artists Market', 'Bondi Markets', 'Paddington Markets', 'Quarry Markets', 'The Rocks Market', 'Home Rug Party', 'Corporate event', 'Sydney Movie Night', 'Melbourne Movie Night', 'Adelaide Movie Night']
+    :name           => ['Rundle Street', 'Rose Street Artists Market', 'Bondi Markets', 'Paddington Markets', 'Quarry Markets', 'The Rocks Market', 'Home Rug Party', 'Corporate event', 'Sydney Movie Night', 'Melbourne Movie Night', 'Adelaide Movie Night'].rand
 )
 end
 
