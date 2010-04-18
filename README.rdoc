@@ -5,9 +5,9 @@ An internal app to support Carpets for Communities. It allows volunteers to repo
 == Quick start
 
   cp config/database.example.yml config/database.yml # Edit to taste
+  bundle install
   rake db:create:all
   rake db:migrate
-  env RAILS_ENV=test rake gems:install
 
   rake            # Run specs
   ./script/server # Run server on localhost:3000

@@ -3,6 +3,11 @@
   = stylesheet_link_tag("forms")
   = stylesheet_link_tag("application")
 
+- content_for(:js) do
+  = javascript_include_tag("vendor/jquery-1.4.2")
+  = javascript_include_tag("vendor/jquery.enumerable")
+  = javascript_include_tag('common/form-row-builder')
+  = javascript_include_tag('events/show')
 %h1
   Bondi Market
   %span.actions
@@ -17,11 +22,11 @@
     %div{:style => 'float:left;text-align: center;margin-right: 0.5em'}
       = image_tag("mockup/xavier.jpg", :size => '75x75')
       %br
-      %caption Xavier Shay
+      %p Xavier Shay
     %div{:style => 'float:left;text-align: center'}
       = image_tag("mockup/xavier-2.jpg", :size => '75x75')
       %br
-      %caption Richard Khoo
+      %p Richard Khoo
     %br{:style => 'clear:both'}
 
 %h2{:style => 'clear:both'} What sold?
@@ -31,7 +36,17 @@
       %th Rug #
       %th Sale price
       %th Seller
-    %tr
+    %tr.sale-input
+      %td
+        %input{:placeholder => 1251}
+      %td
+        %input{:placeholder => 100}
+      %td
+        %select
+          %option
+          %option Xavier Shay
+          %option Richard Koo
+    %tr.template
       %td
         %input{:placeholder => 1251}
       %td
