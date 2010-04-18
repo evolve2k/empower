@@ -12,7 +12,6 @@
     return $.fn.extend({
       formRowBuilder: function formRowBuilder(klass) {
         var parent, template;
-        console.log("HEY " + klass);
         parent = this;
         template = parent.find('.template');
         return parent.find("." + klass + " input").live('keyup', function() {
@@ -27,7 +26,7 @@
             return lastRow.after(template.clone().addClass(klass).removeClass('template'));
           } else {
             secondLastRow = lastRow.prevAll("." + klass).first();
-            return isEmpty(secondLastRow) ? lastRow.remove() : null;
+            return secondLastRow.size() === 1 && isEmpty(secondLastRow) ? lastRow.remove() : null;
           }
         });
       }

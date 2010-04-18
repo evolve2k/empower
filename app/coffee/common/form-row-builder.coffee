@@ -13,7 +13,6 @@
 (($) ->
   $.fn.extend({
     formRowBuilder: (klass) ->
-      console.log("HEY $klass")
       parent: this
       template: parent.find('.template')
       parent.find(".$klass input").live 'keyup', () ->
@@ -27,7 +26,7 @@
           lastRow.after(template.clone().addClass(klass).removeClass('template'))
         else
           secondLastRow: lastRow.prevAll(".$klass").first()
-          if isEmpty(secondLastRow)
+          if secondLastRow.size() == 1 && isEmpty(secondLastRow)
             lastRow.remove()
   })
 )(jQuery)
