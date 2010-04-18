@@ -1,6 +1,8 @@
 class Event < ActiveRecord::Base
   belongs_to :location
-  has_one :volunteer, :through => :creator_id
+
+  belongs_to :volunteer, :foreign_key => :creator_id
+
   validates_presence_of :name
   validates_presence_of :location_id
   validates_presence_of :creator_id
@@ -17,6 +19,4 @@ class Event < ActiveRecord::Base
   def to_param
     permalink
   end
-
-
 end

@@ -7,11 +7,13 @@
   Bondi Market
   %span.actions
     (
-    = link_to("Edit", '#')
+    = link_to("Edit", edit_admin_event_path(@event))
     )
 %dl
   %dt Date
-  %dd 17 May 2010
+  %dd= @event.event_date.strftime('%d %B, %Y')
+  %dt Created By
+  %dd= @event.volunteer.given_names
   %dt Volunteers
   %dd Xavier Shay, Richard Khoo
 

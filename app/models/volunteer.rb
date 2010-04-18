@@ -7,16 +7,16 @@ class Volunteer < ActiveRecord::Base
   has_many :badges, :through => :achievements
 
   validates_presence_of :email
-  
+
   before_validation_on_create :generate_password
   after_save :update_achievements
   after_create :send_welcome_email
-  
+
   delegate :to_s, :to => :full_name
   delegate :permissions, :to => :role, :allow_nil => true
   
   named_scope :sorted, :order => "lower(given_names) ASC"
-  
+
   def <=> (vol)
     given_names.downcase <=> vol.given_names.downcase
   end
@@ -59,13 +59,13 @@ private
   def full_name
     [given_names, surname].join(" ")
   end
-  
+
   def update_achievements
     unachieved_badges.each { |badge| achievements.create(:badge => badge) }
   end
-  
+
   def unachieved_badges
     Badge.all - badges
   end
-  
+
 end

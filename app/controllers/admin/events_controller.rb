@@ -1,7 +1,7 @@
 class Admin::EventsController < AdminController
 
   def index
-    @events = Event.find :all, :order => "id desc"
+    @events = Event.find :all, :order => "event_date desc"
   end
 
   def new
@@ -14,6 +14,7 @@ class Admin::EventsController < AdminController
 
   def create
     @event = Event.new(params[:event])
+    @event.creator_id = @current_volunteer.id
     begin
       @event.save!
       flash[:notice] = 'Event was successfully created.'
