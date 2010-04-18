@@ -1,0 +1,6 @@
+.market
+  .photo= image_tag(@volunteer.photo(nil), :title => "Event photo goes here", :width => 50)
+  .title= "market.title"
+  .date= "market.date"
+  .raised= "number_to_currency(market.raised)"
+  .volunteers= "render(market.volunteers)"

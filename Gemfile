@@ -6,9 +6,10 @@ gem "compass"
 gem "haml"
 gem "formtastic"
 gem "mysql"
+gem "paperclip"
 
 group :development do
-  gem "pg" # Xavier is using this
+  # gem "pg" # Xavier is using this
 end
 
 group :test do
@@ -18,6 +19,8 @@ group :test do
   gem "pickle"
   gem "faker"
   gem "remarkable_activerecord"
+  gem "remarkable_rails"
+  gem "remarkable_paperclip"
   gem "shoulda"
 end
 

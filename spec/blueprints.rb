@@ -2,10 +2,11 @@ require 'machinist/active_record'
 require 'sham'
 require 'faker'
 
-Sham.name  { Faker::Name.name }
-Sham.login { Faker::Internet.user_name.gsub(/W/, '')[0..14] } # max 15 chars
-Sham.email { Faker::Internet.email }
+Sham.name    { Faker::Name.name }
+Sham.login   { Faker::Internet.user_name.gsub(/W/, '')[0..14] } # max 15 chars
+Sham.email   { Faker::Internet.email }
 Sham.message { Faker::Lorem.sentence }
+Sham.photo   { ActionController::TestUploadedFile.new(Dir.glob(File.join(Rails.root, 'spec/fixtures/photos/*.png')).rand) }
 
 Badge.blueprint do
   name
@@ -23,6 +24,10 @@ Volunteer.blueprint do
   email
   password 'm00c0w'
   password_confirmation 'm00c0w'
+end
+
+Volunteer.blueprint(:with_photo) do
+  photo { Sham.photo }
 end
 
 Event.blueprint do

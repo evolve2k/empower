@@ -1,7 +1,7 @@
 class Admin::VolunteersController < AdminController
   resource_controller
   
-  create.wants.html { redirect_to admin_volunteers_path }
+  show.wants.html { redirect_to @volunteer }
   
   layout "admin"
   

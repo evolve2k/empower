@@ -3,6 +3,9 @@ require 'spec_helper'
 describe Volunteer do
   it { should have_many(:achievements) }
   it { should have_many(:badges).through(:achievements) }
+  # FIXME: uninitialized constant Spec::Example::ExampleGroup
+  # it { should have_attached_file(:photo) }
+  # it { should_not validate_attachment_presence(:photo) }
 
   it "should be valid" do
     Volunteer.make.should be_valid
