@@ -34,4 +34,3 @@ Scenario: Try to use protected controller
   When I go to the admin home page
   Then I should be on the volunteer login page
   And I should not be logged in
-  
