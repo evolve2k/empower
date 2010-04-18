@@ -3,10 +3,16 @@
 %p= link_to('New badge', new_admin_badge_path, :class => "add_button")
 
 %table
-  - for badge in Badge.all
+  %thead
     %tr
-      %td= badge
-      %td= truncate(badge.description)
-      %td
-        = link_to('edit', edit_admin_badge_path(badge), :class => "edit_button")
-        = link_to('destroy', [:admin, badge], :method => :delete, :confirm => "Delete #{badge}?", :class => "delete_button")
+      %th Name
+      %th Description
+      %th Actions
+  %tbody
+    - for badge in Badge.all
+      %tr
+        %td= badge
+        %td= truncate(badge.description)
+        %td
+          = link_to('edit', edit_admin_badge_path(badge), :class => "edit_button")
+          = link_to('destroy', [:admin, badge], :method => :delete, :confirm => "Delete #{badge}?", :class => "delete_button")

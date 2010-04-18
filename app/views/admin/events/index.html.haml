@@ -14,6 +14,7 @@
         %th When
         %th Weather
         %th Earned
+        %th Actions
     %tbody
       - @events.each do |event|
         %tr
@@ -22,3 +23,6 @@
           %td= event.event_date.strftime('%d %B, %Y')
           %td= event.weather
           %td $100
+          %td
+            = link_to "edit", [:edit, :admin, event], :class => "edit_button"
+            = link_to('destroy', [:admin, event], :method => :delete, :confirm => "Delete #{event}?", :class => "delete_button")
