@@ -26,7 +26,7 @@
           lastRow.after(template.clone().addClass(klass).removeClass('template'))
         else
           secondLastRow: lastRow.prevAll(".$klass").first()
-          if isEmpty(secondLastRow)
+          if secondLastRow.size() == 1 && isEmpty(secondLastRow)
             lastRow.remove()
   })
 )(jQuery)
