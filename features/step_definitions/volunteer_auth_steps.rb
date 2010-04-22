@@ -5,7 +5,8 @@ Given /^there is a volunteer with the following:$/ do |table|
 end
 
 Given /^I am logged in as "([^\"]*)"$/ do |email|
-  Volunteer.make(:email => email)
+  volunteer = Volunteer.make(:email => email)
+  volunteer.role = Role.first
   visit '/volunteer-login'
   fill_in 'email', :with => email
   fill_in 'password', :with => 'm00c0w'

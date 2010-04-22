@@ -1,6 +1,7 @@
 *.sw?
 *.tmpproj
 *~
+*._
 .DS_Store
 config/database.yml
 config/settings.yml
