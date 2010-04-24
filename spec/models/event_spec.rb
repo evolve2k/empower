@@ -2,13 +2,13 @@ require 'spec_helper'
 
 describe Event do
   describe "table_columns" do
-    it { should have_db_column(:name).of_type(:string) }
-    it { should have_db_column(:permalink).of_type(:string) }
-    it { should have_db_column(:location_id).of_type(:integer) }
-    it { should have_db_column(:creator_id).of_type(:integer) }
-    it { should have_db_column(:weather).of_type(:string) }
-    it { should have_db_column(:crowd_size).of_type(:string) }
-    it { should have_db_column(:event_date).of_type(:date) }
+    it { should have_db_column(:name) }
+    it { should have_db_column(:permalink) }
+    it { should have_db_column(:location_id) }
+    it { should have_db_column(:creator_id) }
+    it { should have_db_column(:weather) }
+    it { should have_db_column(:crowd_size) }
+    it { should have_db_column(:event_date) }
   end
 
   describe "relationships" do
