@@ -21,8 +21,9 @@ config.action_controller.allow_forgery_protection    = false
 # ActionMailer::Base.deliveries array.
 config.action_mailer.delivery_method = :test
 
-
 # We are using bundler ('gem install bundler') to manage gems. 
 # LIST GEM DEPENDANCIES IN THE PROJECT ROOT FILE CALLED 'Gemfile'  
 #
 # config.gem 'cucumber-rails' <-- THESE NO LONGER LIVE HERE
+
+

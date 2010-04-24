@@ -19,7 +19,7 @@ begin
       t.fork = true # You may get faster startup if you set this to false
       t.profile = 'default'
     end
-
+ #
     Cucumber::Rake::Task.new({:rcov => 'db:test:prepare'}, 'Run features that should pass, with rcov') do |t|
       t.rcov = true
       t.rcov_opts = %w{--rails --exclude osx\/objc,gems\/,spec\/,features\/ --aggregate coverage.data}
@@ -28,7 +28,7 @@ begin
       t.fork = true # You may get faster startup if you set this to false
       t.profile = 'default'
     end
-
+ #
     Cucumber::Rake::Task.new({:wip => 'db:test:prepare'}, 'Run features that are being worked on') do |t|
       t.binary = vendored_cucumber_bin
       t.fork = true # You may get faster startup if you set this to false
