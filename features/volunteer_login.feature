@@ -12,8 +12,7 @@ Scenario: Login
     | email | lilian@gmail.com |
     | password   | m00c0w   |
   And I press "Login"
-  Then I should be on the admin home page
-  And I should see "Successfully logged in"
+  Then I should be on the volunteer home page
 
 Scenario: Unsuccessful login
   Given I am on the volunteer login page

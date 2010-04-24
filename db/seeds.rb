@@ -21,7 +21,7 @@ role = Role.create!(
   :name        => "admin",
   :description => "has access to everything"
 )
-Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "admin@example.com", :password => "admin", :password_confirmation => "admin", :role => role)
+Volunteer.create!(:given_names => "scott", :surname => "scottish", :email => "admin@example.com", :password => "admin", :password_confirmation => "admin", :roles => [role])
 
 Role.create!(
   :name        => "national",

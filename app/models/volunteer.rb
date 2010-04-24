@@ -1,7 +1,8 @@
 class Volunteer < ActiveRecord::Base
   acts_as_authentic
   
-  belongs_to :role
+  has_many :roles_volunteers
+  has_many :roles, :through => :roles_volunteers
 
   has_many :achievements, :dependent => :destroy
   has_many :badges, :through => :achievements
@@ -14,7 +15,9 @@ class Volunteer < ActiveRecord::Base
   after_create :send_welcome_email
 
   delegate :to_s, :to => :full_name
-  delegate :permissions, :to => :role, :allow_nil => true
+  def permissions
+    roles.map(&:permissions).flatten
+  end
   
   named_scope :sorted, :order => "lower(given_names) ASC"
 
@@ -31,11 +34,11 @@ class Volunteer < ActiveRecord::Base
   def method_missing(method_id, *args)
     if match = matches_dynamic_role_check?(method_id)
   	  tokenize_roles(match.captures.first).each do |check|
-  	    return true if role && role.name.downcase == check
+  	    return true if roles.map(&:name).map(&:downcase).include? check
   	  end
   	  return false
     elsif match = matches_dynamic_perm_check?(method_id)
-      return true if permissions && permissions.find_by_name(match.captures.first.gsub("_", " "))
+      return true if permissions && permissions.map(&:name).include?(match.captures.first.gsub("_", " "))
   	else
   	  super
   	end

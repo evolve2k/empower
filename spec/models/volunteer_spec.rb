@@ -24,7 +24,7 @@ describe Volunteer do
     before do
       @role       = Role.make(:name => "manager")
       @permission = Permission.make(:name => "manage volunteers", :roles => [@role])
-      @manager    = Volunteer.make(:role => @role)
+      @manager    = Volunteer.make(:roles => [@role])
     end
     
     it "should be a manager" do

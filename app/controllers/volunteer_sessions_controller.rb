@@ -8,7 +8,7 @@ class VolunteerSessionsController < ApplicationController
   def create
     @volunteer_session = VolunteerSession.new(params[:volunteer_session])
     if @volunteer_session.save
-      if current_volunteer.role
+      if current_volunteer.roles.any?
         flash[:notice] = "Successfully logged in."
         redirect_to admin_url
       else
