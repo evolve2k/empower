@@ -18,3 +18,4 @@ tmp/restart.txt
 tmp/web*
 vendor/plugins/haml
 public/stylesheets/compiled/*
+rerun.txt
