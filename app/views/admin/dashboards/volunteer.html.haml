@@ -11,24 +11,25 @@
 %h2 Things You Can Do
 .clear
 %ul.nav
-  %li= link_to("Write an event wrap up and report sales")
-  %li= link_to("View or edit your profile")
-  %li= link_to("Find other volunteers")
+  %li= link_to("Create an event", admin_events_path, :method => :new )
+  %li= link_to("View your profile", volunteer_path(current_volunteer))  
+  %li= link_to("Edit your profile", admin_volunteers_path(current_volunteer), :method => :edit)
+  %li= link_to("Find other volunteers", admin_volunteers_path)
 %h2 Market Numbers For Your Region
 .clear
 %table.statistics
   %thead
     %tr
       %th
-      %th Weekly Avg
-      %th 6 Month Total
+      %th Weekly Average
+      %th YTD 
   %tbody
     %tr
-      %th Markets
+      %th Regional Sales
       %td.big-number 43.5
       %td.big-number 188
     %tr
-      %th Sales
+      %th National Sales
       %td $1,625
       %td $4,780
 //
