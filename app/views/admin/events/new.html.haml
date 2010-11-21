@@ -8,6 +8,7 @@
   = javascript_include_tag('events/new')
 
 %h2= "New Event"
+.clear
+
 - semantic_form_for [:admin, @event] do |f|
   = render :partial => "form", :locals => { :f => f }
-

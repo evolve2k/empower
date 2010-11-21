@@ -2,6 +2,13 @@
   = stylesheet_link_tag("reset")
   = stylesheet_link_tag("forms")
   = stylesheet_link_tag("application")
+  = stylesheet_link_tag("compiled/events/show")
+
+- content_for(:js) do
+  = javascript_include_tag("vendor/jquery-1.4.2")
+  = javascript_include_tag("vendor/jquery.enumerable")
+  = javascript_include_tag('common/form-row-builder')
+  = javascript_include_tag('events/show')
 
 %h2= @event.name
 = link_to("Edit this event", edit_admin_event_path(@event), :class => "edit_button")
@@ -16,26 +23,47 @@
   %dt Volunteers
   %dd Xavier Shay, Richard Khoo
 
-%h2 What sold?
+%h2{:style => 'clear:both'} What sold?
+.clear
 %form.tableForm
   %table
-    %tr
-      %th Rug #
-      %th Sale price
-      %th Seller
-    %tr
-      %td
-        %input{:placeholder => 1251}
-      %td
-        %input{:placeholder => 100}
-      %td
-        %select
-          %option
-          %option Xavier Shay
-          %option Richard Koo
-    %tr
-      %th Total
-      %td $0
-    %tr
-      %td
-        %input{:type => 'submit', :value => 'Save'}
+    %thead
+      %tr
+        %th Rug #
+        %th Sale price
+        %th Seller
+    %tbody
+      %tr.sale-input
+        %td
+          %input{:placeholder => 1251}
+        %td
+          %input{:placeholder => 100, :class => 'sale-amount'}
+        %td
+          %select
+            %option
+            %option Xavier Shay
+            %option Richard Koo
+      %tr.template
+        %td
+          %input{:placeholder => 1251}
+        %td
+          %input{:placeholder => 100, :class => 'sale-amount'}
+        %td
+          %select
+            %option
+            %option Xavier Shay
+            %option Richard Koo
+    %tfoot
+      %tr
+        %th Total Sales
+        %td#total-sales $0
+      %tr
+        %th Float
+        %td
+          %input#float-amount{:value => 50}
+      %tr
+        %th Total Cash
+        %th#total-cash $0
+      %tr
+        %td
+          %input{:type => 'submit', :value => 'Save'}
