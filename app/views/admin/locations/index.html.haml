@@ -2,7 +2,20 @@
 = link_to "New location", new_admin_location_path, :class => "add_button"
 
 %table#locations.list
+  %thead
+    %tr
+      %th Name
+      %th Suburb
+      %th Web Address
+      %th Contact Email
+      %th Actions
   %tbody
     - for location in @locations
-      %tr[location]
-        %td= link_to location, [:edit, :admin, location]
+      %tr
+        %td= link_to location, [:admin, location]
+        %td= location.suburb
+        %td= location.web_address
+        %td= location.contact_email
+        %td
+          = link_to "edit", [:edit, :admin, location], :class => "edit_button"
+          = link_to('destroy', [:admin, location], :method => :delete, :confirm => "Delete #{location}?", :class => "delete_button")
