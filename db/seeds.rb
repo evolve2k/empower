@@ -126,3 +126,15 @@ Badge.create!(
   :threshold => "1"
   )
 
+10.times do
+  Location.create!(
+    :name => Faker::Company.bs,
+    :postcode => Faker::Address.uk_postcode,
+    :address => Faker::Address.secondary_address,
+    :suburb  => Faker::Address.street_name,
+    :contact_name => Faker::Name.name,
+    :contact_phone => Faker::PhoneNumber.phone_number,
+    :contact_email => Faker::Internet.email,
+    :web_address => Faker::Internet.domain_name
+)
+end
