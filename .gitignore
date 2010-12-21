@@ -8,7 +8,6 @@ config/settings.yml
 coverage*
 db/*.sqlite3
 db/development_structure.sql
-db/schema.rb
 log/*
 nbproject
 public/stylesheets/application.css
