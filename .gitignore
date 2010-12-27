@@ -18,3 +18,4 @@ tmp/web*
 vendor/plugins/haml
 public/stylesheets/compiled/*
 rerun.txt
+.rvmrc
