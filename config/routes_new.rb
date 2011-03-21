@@ -1,4 +1,3 @@
-(in /Users/richie/Projects/empower)
 Empower::Application.routes.draw do
   resource :volunteer_sessions
   resources :events do
