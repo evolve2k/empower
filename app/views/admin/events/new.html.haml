@@ -7,11 +7,40 @@
   = javascript_include_tag('jquery-1.4.2')
   = javascript_include_tag('events/new')
 
-- if display_standard_flashes
-  :javascript
-    $(".flash_messages").fadeIn("slow");
-.flash_messages
-  = display_standard_flashes
-
-- semantic_form_for [:admin, @event] do |f|
-  = render :partial => "form", :locals => { :f => f }
+.centered
+  %h2 Event Wrapup
+  %form.formtastic{:action => '/events/1'}
+    %ul
+      %li
+        %label{:style => 'float: left'} Where?
+        .fields
+          %input
+      %li
+        %label Who?
+        .fields{:style => 'width: 150px;'}
+          %input{:class => 'who-input'}
+      %li
+        %label Weather?
+        .fields
+          %select
+            %option Beautiful
+            %option So hot!
+            %option Meh
+            %option Bit nippy
+            %option Needed an extra jumper
+            %option Monsoon
+      %li
+        %label Crowd?
+        .fields
+          %select
+            %option Packed
+            %option Meh
+            %option Scarse
+      %li
+        %label How'd it go?
+        .fields
+          %textarea
+    %fieldset.buttons
+      %ol
+        %li.commit
+          %input.update{:type => "submit", :value => "Next",  :name => "commit"}

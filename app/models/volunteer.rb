@@ -6,11 +6,27 @@ class Volunteer < ActiveRecord::Base
 
   validates_presence_of :email
   
+  before_validation_on_create :generate_password
   after_save :update_achievements
+  after_create :send_welcome_email
   
   delegate :to_s, :to => :full_name
   
+  named_scope :sorted, :order => "lower(given_names) ASC"
+  
+  def <=> (vol)
+    given_names.downcase <=> vol.given_names.downcase
+  end
+  
 private
+
+  def send_welcome_email
+    Mailer.deliver_welcome(self)
+  end
+
+  def generate_password
+    self.password ||= randomize_password
+  end
 
   def full_name
     [given_names, surname].join(" ")
@@ -23,4 +39,5 @@ private
   def unachieved_badges
     Badge.all - badges
   end
+  
 end

@@ -11,3 +11,7 @@ Given /^I am logged in as "([^\"]*)"$/ do |email|
   fill_in 'password', :with => 'm00c0w'
   click_button 'Login'
 end
+
+Then /^I should not be logged in$/ do
+  controller.send(:logged_in?).should be_nil
+end
