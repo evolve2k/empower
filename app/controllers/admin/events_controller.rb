@@ -1,7 +1,7 @@
 class Admin::EventsController < AdminController
 
   def index
-    @events = Event.find :all, :order => "id desc"
+    @events = Event.find :all, :order => "event_date desc"
   end
 
   def new
