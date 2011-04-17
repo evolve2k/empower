@@ -1,5 +1,5 @@
 = link_to "Create an event", new_admin_event_path
-= @current_volunteer.id
+
 - if @events.empty?
   Sorry there are no events
 - else
@@ -16,6 +16,6 @@
         %tr
           %td= link_to event.name, admin_event_path(event)
           %td= event.location_id
-          %td= event.event_date
+          %td= event.event_date.strftime('%d %B, %Y')
           %td= event.weather
           %td $100
