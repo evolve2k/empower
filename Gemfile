@@ -28,5 +28,4 @@ group :cucumber do
   gem 'cucumber-rails'
   gem 'webrat'
   gem 'database_cleaner'
-  gem 'test-unit'
 end
