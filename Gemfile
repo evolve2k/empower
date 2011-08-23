@@ -18,8 +18,6 @@ group :test do
   gem 'pickle'
   gem 'faker'
   gem 'remarkable_activerecord'
-  gem 'remarkable_rails'
-  gem 'remarkable_paperclip'
   gem 'shoulda'
 end
 

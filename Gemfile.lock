@@ -99,12 +99,6 @@ GEM
     remarkable_activerecord (3.1.13)
       remarkable (~> 3.1.13)
       rspec (>= 1.2.0)
-    remarkable_paperclip (0.6.4)
-    remarkable_rails (3.1.13)
-      remarkable (~> 3.1.13)
-      remarkable_activerecord (~> 3.1.13)
-      rspec (>= 1.2.0)
-      rspec-rails (>= 1.2.0)
     rspec (2.3.0)
       rspec-core (~> 2.3.0)
       rspec-expectations (~> 2.3.0)
@@ -148,8 +142,6 @@ DEPENDENCIES
   pickle
   rails (= 3.0.3)
   remarkable_activerecord
-  remarkable_paperclip
-  remarkable_rails
   rspec
   rspec-rails
   shoulda
