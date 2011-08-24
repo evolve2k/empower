@@ -4,7 +4,7 @@ describe Badge do
   it { should validate_presence_of(:name) }
   it { should validate_presence_of(:sql) }
   it { should validate_presence_of(:threshold) }
-  it { Badge.make; should validate_uniqueness_of(:name) }
+  it { Badge.make!; should validate_uniqueness_of(:name) }
   
   context 'when unsaved' do
     before do

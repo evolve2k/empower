@@ -6,25 +6,26 @@ describe Volunteer do
   # FIXME: uninitialized constant Spec::Example::ExampleGroup
   # it { should have_attached_file(:photo) }
   # it { should_not validate_attachment_presence(:photo) }
-
+  let(:volunteer) { Volunteer.make! }
   it "should be valid" do
     Volunteer.make.should be_valid
   end
 
   it "should require email" do
-    Volunteer.new(Volunteer.make_unsaved(:email => "").attributes).should_not be_valid
+    volunteer = Volunteer.make(:email => "")
+    volunteer.should_not be_valid
   end
   
   it "should generate password on create" do
-    volunteer = Volunteer.make(:password => "", :password_confirmation => "")
+    volunteer = Volunteer.make!(:password => "", :password_confirmation => "")
     volunteer.password.should_not be_blank
   end
   
   context "with manger role" do
     before do
-      @role       = Role.make(:name => "manager")
-      @permission = Permission.make(:name => "manage volunteers", :roles => [@role])
-      @manager    = Volunteer.make(:roles => [@role])
+      @role       = Role.make!(:name => "manager")
+      @permission = Permission.make!(:name => "manage volunteers", :roles => [@role])
+      @manager    = Volunteer.make!(:roles => [@role])
     end
     
     it "should be a manager" do
@@ -37,7 +38,7 @@ describe Volunteer do
     
     context "and a executive role" do
       before do
-        @manager.update_attributes(:roles => [Role.make(:name => "executive")])
+        @manager.update_attributes(:roles => [Role.make!(:name => "executive")])
       end
       
       it "should be a manager or an executive" do

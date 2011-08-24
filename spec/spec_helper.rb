@@ -3,6 +3,8 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path(File.join(File.dirname(__FILE__),'..','config','environment'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'blueprints.rb'))
+require 'machinist/active_record'
+require "#{Rails.root}/spec/blueprints"
 
 require 'spec/autorun'
 require 'spec/rails'

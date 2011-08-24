@@ -1,17 +1,17 @@
 require 'machinist/active_record'
-require 'sham'
-require 'faker'
+# require 'sham'
+# require 'faker'
 
-Sham.name    { Faker::Name.name }
-Sham.login   { Faker::Internet.user_name.gsub(/W/, '')[0..14] } # max 15 chars
-Sham.email   { Faker::Internet.email }
-Sham.message { Faker::Lorem.sentence }
-Sham.photo   { ActionController::TestUploadedFile.new(Dir.glob(File.join(Rails.root, 'spec/fixtures/photos/*.png')).rand) }
+# Sham.name    { Faker::Name.name }
+# Sham.login   { Faker::Internet.user_name.gsub(/W/, '')[0..14] } # max 15 chars
+# Sham.email   { Faker::Internet.email }
+# Sham.message { Faker::Lorem.sentence }
+# Sham.photo   { ActionController::TestUploadedFile.new(Dir.glob(File.join(Rails.root, 'spec/fixtures/photos/*.png')).rand) }
 
 Badge.blueprint do
-  name
-  sql       '1'
-  threshold 1
+  name {"Awesome Badge"}
+  sql  { sn }
+  threshold {1}
 end
 
 Permission.blueprint do
@@ -21,9 +21,9 @@ Role.blueprint do
 end
 
 Volunteer.blueprint do
-  email
-  password 'm00c0w'
-  password_confirmation 'm00c0w'
+  email { "john-#{sn}@example.com"}
+  password { "password" }
+  password_confirmation { "password" }
 end
 
 Volunteer.blueprint(:with_photo) do
@@ -31,7 +31,7 @@ Volunteer.blueprint(:with_photo) do
 end
 
 Event.blueprint do
-  name '#{ Faker::Company.name }'
+  name  { "Bondi Market Stall-#{sn}"}
   creator_id 1
   location_id 1
   weather { ['Beautiful', 'So hot!', 'Meh','Bit nippy', 'Needed an extra jumper', 'Monsoon'].rand }

@@ -14,7 +14,7 @@ end
 group :test do
   gem 'rspec'
   gem 'rspec-rails'
-  gem 'machinist', '1.0.6' #Last version before Machinist 2
+  gem 'machinist', '>= 2.0.0.beta2'
   gem 'pickle'
   gem 'faker'
   gem 'remarkable_activerecord'
